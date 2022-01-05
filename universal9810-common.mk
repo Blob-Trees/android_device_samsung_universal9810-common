@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.safailnet.rc \
+    fstab.samsungexynos9810_ramdisk \
     fstab.samsungexynos9810 \
     init.samsung.rc \
     init.usb_accessory.rc
