@@ -159,7 +159,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.safailnet.rc \
-    fstab.zram \
+    fstab.samsungexynos9810 \
     init.samsung.rc \
     init.usb_accessory.rc
 
