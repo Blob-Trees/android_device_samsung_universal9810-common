@@ -158,19 +158,17 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    mobicore.rc \
+    ueventd.rc \
+    init.baseband.rc \
+    init.gps.rc \
     init.safailnet.rc \
+    init.samsung.bsp.rc \
     fstab.samsungexynos9810_ramdisk \
     fstab.samsungexynos9810 \
     init.samsungexynos9810.root.rc \
     init.samsungexynos9810.rc \
     init.samsungexynos9810.usb.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.samsung.bsp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.bsp.rc \
-    $(LOCAL_PATH)/rootdir/etc/mobicore.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mobicore.rc \
-    $(LOCAL_PATH)/rootdir/etc/ueventd.samsungexynos9810.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 # Media
 PRODUCT_COPY_FILES += \
