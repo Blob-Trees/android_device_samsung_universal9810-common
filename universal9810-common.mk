@@ -163,8 +163,7 @@ PRODUCT_PACKAGES += \
     fstab.samsungexynos9810 \
     init.samsungexynos9810.root.rc \
     init.samsungexynos9810.rc \
-    init.samsung.rc \
-    init.usb_accessory.rc
+    init.samsungexynos9810.usb.rc
 
 # Media
 PRODUCT_COPY_FILES += \

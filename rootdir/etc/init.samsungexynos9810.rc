@@ -167,7 +167,7 @@ on init
     chown system radio /sys/class/sensors/ssp_sensor/thermistor_channel_0
     chown system radio /sys/class/sensors/ssp_sensor/thermistor_channel_1
     chown system radio /sys/class/sensors/ssp_sensor/bcm_minidump
-	chown system radio /sys/class/sensors/ssp_sensor/reset_info
+    chown system radio /sys/class/sensors/ssp_sensor/reset_info
     chown root system /sys/class/sec/sensorhub/mcu_power
 
 # Sensorhub IIO
@@ -543,7 +543,7 @@ on post-fs-data
     chown clat clat /sys/kernel/clat/xlat_v4_addrs
 
 on boot
-# SSWAP
+    write /proc/sys/vm/page-cluster 0
     write /proc/sys/vm/swappiness 160
 
     # Allow to access debugfs for system:system
@@ -872,11 +872,10 @@ on boot
 
 on fs
     mount_all /vendor/etc/fstab.${ro.hardware} --early
+    swapon_all /vendor/etc/fstab.${ro.hardware}
 
     mount none /mnt/vendor/efs /efs bind
     mount none /mnt/vendor/cpefs /cpefs bind
-
-    setprop ro.crypto.fuse_sdcard true
 
     restorecon_recursive /mnt/vendor/efs
     restorecon_recursive /mnt/vendor/cpefs
@@ -986,6 +985,7 @@ on fs
 	chown system system /sys/class/mdnie/mdnie/color_lens
 	chown system system /sys/class/mdnie/mdnie/whiteRGB
 	chown system system /sys/class/mdnie/mdnie/light_notification
+	chown system system /sys/class/mdnie/mdnie/lux
 
 # Permissions for System LSI NFC
 # NFC : Permissions for NFC
@@ -1011,12 +1011,6 @@ on fs
 # DP DRM
     chmod 0660 /sys/class/dp_sec/dp_drm
     chown system system /sys/class/dp_sec/dp_drm
-
-# Copy DRM Key
-#    copy /system/app/wv.keys /factory/wv.keys
-
-# Permission for DRM Key
-#    chmod 0644 /factory/wv.keys
 
 # SVC LED
     chown system system /sys/class/sec/led/led_r
@@ -1047,22 +1041,6 @@ on fs
 # ARGOSD network_throughput
     chown system system /dev/network_throughput
 
-# ARGOSD
-service argos-daemon /vendor/bin/argosd
-    class main
-    user system
-    group system radio
-
-service fuse_sdcard /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard /storage/sdcard
-    class late_start
-    disabled
-service fuse_usb1 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usb1 /storage/usb1
-    class late_start
-    disabled
-service fuse_usb2 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usb2 /storage/usb2
-    class late_start
-    disabled
-
 service abox /vendor/bin/main_abox 17c50000.abox /data/vendor/log/abox
     class late_start
     user audioserver
@@ -1090,18 +1068,30 @@ on property:ro.bootmode=charger
     mkdir /efs/lpm 0775 system system
     class_start sec-charger
 
-# umount service
-service umount_service /system/bin/umount -D /preload
-    disabled
-    seclabel u:r:umount_service:s0
+on property:sys.boot_completed=1
+
+service cass /system/bin/true
     oneshot
+    disabled
+
+service ExynosHWCServiceTW /system/bin/true
+    oneshot
+    disabled
 
 on property:sys.boot_completed=1
     setprop security.semdaemonfinish 0
     start sem_daemon
+service ExynosHWCConfigs /system/bin/true
+    oneshot
+    disabled
 
-on property:security.semdaemonfinish=1
-    stop sem_daemon
+service proca /system/bin/true
+    oneshot
+    disabled
+
+service secure_storage /system/bin/true
+    oneshot
+    disabled
 
 # SSWAP
 service swapon /sbin/sswap -s -f 2048
@@ -1109,5 +1099,43 @@ service swapon /sbin/sswap -s -f 2048
     user root
     group root
     seclabel u:r:sswap:s0
+service sec_wsm_service /system/bin/true
     oneshot
+    disabled
+
+service vaultkeeper /system/bin/true
+    oneshot
+    disabled
+
+service vaultkeeper_hal /system/bin/true
+    oneshot
+    disabled
+
+service icccserv /system/bin/true
+    oneshot
+    disabled
+
+service timaserv /system/bin/true
+    oneshot
+    disabled
+
+service atnserv /system/bin/true
+    oneshot
+    disabled
+
+service ucmtlc-hal-service /system/bin/true
+    oneshot
+    disabled
+
+service snapserv /system/bin/true
+    oneshot
+    disabled
+
+service snap_utility_64 /system/bin/true
+    oneshot
+    disabled
+
+service snap_utility_32 /system/bin/true
+    oneshot
+    disabled
 
