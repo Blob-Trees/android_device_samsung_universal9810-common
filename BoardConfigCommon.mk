@@ -138,13 +138,13 @@ BOARD_VNDK_VERSION := current
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # SELinux
-SELINUX_IGNORE_NEVERALLOWS := true
-BOARD_SEPOLICY_TEE_FLAVOR := mobicore
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+# SELINUX_IGNORE_NEVERALLOWS := true
+# BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+# BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Inherit SLSI common SEPolicy
-include device/custom/sepolicy/exynos/sepolicy.mk
-include device/samsung_slsi/sepolicy/sepolicy.mk
+# include device/custom/sepolicy/exynos/sepolicy.mk
+# include device/samsung_slsi/sepolicy/sepolicy.mk
 
 # Inherit from the proprietary version
 include vendor/samsung/universal9810-common/BoardConfigVendor.mk
