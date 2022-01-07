@@ -19,9 +19,9 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := falses
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # AptX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/proprietary/libaptXHD_encoder:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
-    $(LOCAL_PATH)/audio/proprietary/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so
+PRODUCT_PACKAGES += \
+    libaptX_encoder \
+    libaptXHD_encoder
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
