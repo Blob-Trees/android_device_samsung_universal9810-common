@@ -33,16 +33,21 @@ class DolbyFragment : PreferenceFragmentCompat(), Preference.OnPreferenceChangeL
         DolbyEnablePreference!!.isChecked = dolbyCore.isRunning()
         DolbyEnablePreference!!.onPreferenceChangeListener = this
         val items = arrayOf<CharSequence>(
-            "1", "2", "3", "4"
+            "1", "2", "3", "4", "5", "6", "7", "8", "9"
         )
         DolbyModesPreference!!.entryValues = items
         DolbyModesPreference!!.onPreferenceChangeListener =
             Preference.OnPreferenceChangeListener { _: Preference?, newValue: Any ->
                 when ((newValue as String).toInt()) {
                     1 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_AUTO)
-                    2 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_MOVIE)
-                    3 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_MUSIC)
-                    4 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_VOICE)
+                    2 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_GAME)
+                    3 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_GAME_1)
+                    4 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_GAME_2)
+                    5 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_MOVIE)
+                    6 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_MUSIC)
+                    7 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_OFF)
+                    8 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_VOICE)
+                    9 -> dolbyCore.startDolbyEffect(DolbyCore.PROFILE_SPACIAL_AUDIO)
                     else -> {
                     }
                 }

@@ -38,5 +38,10 @@ class DolbyCore {
         const val PROFILE_MOVIE = 1
         const val PROFILE_MUSIC = 2
         const val PROFILE_VOICE = 3
+        const val PROFILE_GAME = 4
+        const val PROFILE_OFF = 5
+        const val PROFILE_GAME_1 = 6
+        const val PROFILE_GAME_2 = 7
+        const val PROFILE_SPACIAL_AUDIO = 8
     }
 }

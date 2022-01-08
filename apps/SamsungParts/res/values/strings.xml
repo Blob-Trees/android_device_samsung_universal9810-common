@@ -42,6 +42,11 @@
     <string name="dolby_profile_movie">Movie Profile</string>
     <string name="dolby_profile_music">Music Profile</string>
     <string name="dolby_profile_voice">Voice Profile</string>
+    <string name="dolby_profile_game">Game Profile</string>
+    <string name="dolby_profile_off">No Profile</string>
+    <string name="dolby_profile_game_1">Game 1 Profile</string>
+    <string name="dolby_profile_game_2">Game 2 Profile</string>
+    <string name="dolby_profile_special_audio">Special Audio Profile</string>
     <!-- Outsiders Kernel features category -->
     <string name="outsiders_kernel_features">Outsiders Kernel Features</string>
 
