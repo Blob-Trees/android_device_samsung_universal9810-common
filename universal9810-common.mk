@@ -372,7 +372,7 @@ PRODUCT_PACKAGES += \
 # SamsungParts
 PRODUCT_PACKAGES += \
     SamsungParts \
-    vendor.outsiders.hardware.battery@1.0-service
+    vendor.samsung.parts.hardware.battery@1.0-service
 
 # RCS
 PRODUCT_PACKAGES += \
