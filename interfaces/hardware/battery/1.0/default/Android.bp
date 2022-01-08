@@ -1,7 +1,7 @@
 // FIXME: your file license if you have one
 
 cc_binary {
-    name: "vendor.outsiders.hardware.battery@1.0-service",
+    name: "vendor.samsung.parts.hardware.battery@1.0-service",
     relative_install_path: "hw",
     proprietary: true,
     srcs: [
@@ -12,8 +12,8 @@ cc_binary {
         "libhidlbase",
         "libutils",
         "liblog",
-        "vendor.outsiders.hardware.battery@1.0",
+        "vendor.samsung.parts.hardware.battery@1.0",
     ],
-    init_rc: [ "vendor.outsiders.hardware.battery@1.0-service.rc" ],
-    vintf_fragments: [ "vendor.outsiders.hardware.battery@1.0.xml" ],
+    init_rc: [ "vendor.samsung.parts.hardware.battery@1.0-service.rc" ],
+    vintf_fragments: [ "vendor.samsung.parts.hardware.battery@1.0.xml" ],
 }

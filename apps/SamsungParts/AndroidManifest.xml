@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.outsiders.samsungextras"
+    package="com.samsung.parts"
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
@@ -17,7 +17,7 @@
         android:theme="@style/Theme.SubSettingsBase"
         android:fullBackupOnly="true">
         <activity
-            android:name="com.outsiders.samsungextras.DeviceSettingsActivity"
+            android:name="com.samsung.parts.DeviceSettingsActivity"
             android:exported="true"
             android:excludeFromRecents="true"
             android:launchMode="singleTask">
@@ -45,7 +45,7 @@
                 android:resource="@drawable/ic_device" />
         </activity>
         <activity
-            android:name="com.outsiders.samsungextras.speaker.ClearSpeakerActivity" 
+            android:name="com.samsung.parts.speaker.ClearSpeakerActivity" 
             android:exported="true"
             android:label="@string/clear_speaker_title">
             <intent-filter>
@@ -54,7 +54,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.outsiders.samsungextras.dolby.DolbyActivity"
+            android:name="com.samsung.parts.dolby.DolbyActivity"
             android:exported="true"
             android:label="@string/dolby_title">
             <intent-filter>
@@ -63,7 +63,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.outsiders.samsungextras.battery.BatteryActivity"
+            android:name="com.samsung.parts.battery.BatteryActivity"
             android:exported="true"
             android:label="@string/fastcharge_title">
 

@@ -1,4 +1,4 @@
-package com.outsiders.samsungextras.dolby
+package com.samsung.parts.dolby
 
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService

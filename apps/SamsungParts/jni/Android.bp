@@ -12,7 +12,7 @@ cc_library_shared {
         "libhidlbase",
         "liblog",
         "libutils",
-        "vendor.outsiders.hardware.battery@1.0",
+        "vendor.samsung.parts.hardware.battery@1.0",
     ]
 }
 

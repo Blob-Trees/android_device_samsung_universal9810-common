@@ -1,4 +1,4 @@
-package com.outsiders.samsungextras.interfaces
+package com.samsung.parts.interfaces
 
 object Battery {
     var chargeSysfs: Int

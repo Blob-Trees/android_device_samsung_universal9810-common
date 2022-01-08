@@ -1,4 +1,4 @@
-package com.outsiders.samsungextras.preferences
+package com.samsung.parts.preferences
 
 import android.content.Context
 import android.graphics.PorterDuff
@@ -48,7 +48,7 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
             // move our seekbar to the new view we've been given
             val oldContainer = mSeekBar.parent
             val newContainer =
-                holder.findViewById(com.outsiders.samsungextras.R.id.seekbar) as ViewGroup
+                holder.findViewById(com.samsung.parts.R.id.seekbar) as ViewGroup
             if (oldContainer !== newContainer) {
                 // remove the seekbar from the old view
                 if (oldContainer != null) {
@@ -67,10 +67,10 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
         mSeekBar.max = getSeekValue(mMaxValue)
         mSeekBar.progress = getSeekValue(mValue)
         mSeekBar.isEnabled = isEnabled
-        mValueTextView = holder.findViewById(com.outsiders.samsungextras.R.id.value) as TextView
-        mResetImageView = holder.findViewById(com.outsiders.samsungextras.R.id.reset) as ImageView
-        mMinusImageView = holder.findViewById(com.outsiders.samsungextras.R.id.minus) as ImageView
-        mPlusImageView = holder.findViewById(com.outsiders.samsungextras.R.id.plus) as ImageView
+        mValueTextView = holder.findViewById(com.samsung.parts.R.id.value) as TextView
+        mResetImageView = holder.findViewById(com.samsung.parts.R.id.reset) as ImageView
+        mMinusImageView = holder.findViewById(com.samsung.parts.R.id.minus) as ImageView
+        mPlusImageView = holder.findViewById(com.samsung.parts.R.id.plus) as ImageView
         updateValueViews()
         mSeekBar.setOnSeekBarChangeListener(this)
         mResetImageView!!.setOnClickListener(this)
@@ -96,10 +96,10 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
     private fun updateValueViews() {
         if (mValueTextView != null) {
             mValueTextView!!.text = context.getString(
-                com.outsiders.samsungextras.R.string.custom_seekbar_value,
+                com.samsung.parts.R.string.custom_seekbar_value,
                 if (!mTrackingTouch || mContinuousUpdates) getTextValue(mValue) +
                         (if (mDefaultValueExists && mValue == mDefaultValue) " (" +
-                                context.getString(com.outsiders.samsungextras.R.string.custom_seekbar_default_value) + ")" else "") else getTextValue(
+                                context.getString(com.samsung.parts.R.string.custom_seekbar_default_value) + ")" else "") else getTextValue(
                     mTrackingValue
                 )
             )
@@ -112,7 +112,7 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
             if (mValue == mMinValue || mTrackingTouch) {
                 mMinusImageView!!.isClickable = false
                 mMinusImageView!!.setColorFilter(
-                    context.getColor(com.outsiders.samsungextras.R.color.disabled_text_color),
+                    context.getColor(com.samsung.parts.R.color.disabled_text_color),
                     PorterDuff.Mode.MULTIPLY
                 )
             } else {
@@ -124,7 +124,7 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
             if (mValue == mMaxValue || mTrackingTouch) {
                 mPlusImageView!!.isClickable = false
                 mPlusImageView!!.setColorFilter(
-                    context.getColor(com.outsiders.samsungextras.R.color.disabled_text_color),
+                    context.getColor(com.samsung.parts.R.color.disabled_text_color),
                     PorterDuff.Mode.MULTIPLY
                 )
             } else {
@@ -170,20 +170,20 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
 
     override fun onClick(v: View) {
         when (v.id) {
-            com.outsiders.samsungextras.R.id.reset -> {
+            com.samsung.parts.R.id.reset -> {
                 Toast.makeText(
                     context,
                     context.getString(
-                        com.outsiders.samsungextras.R.string.custom_seekbar_default_value_to_set,
+                        com.samsung.parts.R.string.custom_seekbar_default_value_to_set,
                         getTextValue(mDefaultValue)
                     ),
                     Toast.LENGTH_LONG
                 ).show()
             }
-            com.outsiders.samsungextras.R.id.minus -> {
+            com.samsung.parts.R.id.minus -> {
                 setValue(mValue - mInterval, true)
             }
-            com.outsiders.samsungextras.R.id.plus -> {
+            com.samsung.parts.R.id.plus -> {
                 setValue(mValue + mInterval, true)
             }
         }
@@ -191,10 +191,10 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
 
     override fun onLongClick(v: View): Boolean {
         when (v.id) {
-            com.outsiders.samsungextras.R.id.reset -> {
+            com.samsung.parts.R.id.reset -> {
                 setValue(mDefaultValue, true)
             }
-            com.outsiders.samsungextras.R.id.minus -> {
+            com.samsung.parts.R.id.minus -> {
                 setValue(
                     if (mMaxValue - mMinValue > mInterval * 2 && mMaxValue + mMinValue < mValue * 2) Math.floorDiv(
                         mMaxValue + mMinValue,
@@ -202,7 +202,7 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
                     ) else mMinValue, true
                 )
             }
-            com.outsiders.samsungextras.R.id.plus -> {
+            com.samsung.parts.R.id.plus -> {
                 setValue(
                     if (mMaxValue - mMinValue > mInterval * 2 && mMaxValue + mMinValue > mValue * 2) -1 * Math.floorDiv(
                         -1 * (mMaxValue + mMinValue),
@@ -283,18 +283,18 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
     init {
         val a = context.obtainStyledAttributes(
             attrs,
-            com.outsiders.samsungextras.R.styleable.CustomSeekBarPreference
+            com.samsung.parts.R.styleable.CustomSeekBarPreference
         )
         try {
             mShowSign = a.getBoolean(
-                com.outsiders.samsungextras.R.styleable.CustomSeekBarPreference_showSign,
+                com.samsung.parts.R.styleable.CustomSeekBarPreference_showSign,
                 mShowSign
             )
             val units =
-                a.getString(com.outsiders.samsungextras.R.styleable.CustomSeekBarPreference_units)
+                a.getString(com.samsung.parts.R.styleable.CustomSeekBarPreference_units)
             if (units != null) mUnits = " $units"
             mContinuousUpdates = a.getBoolean(
-                com.outsiders.samsungextras.R.styleable.CustomSeekBarPreference_continuousUpdates,
+                com.samsung.parts.R.styleable.CustomSeekBarPreference_continuousUpdates,
                 mContinuousUpdates
             )
         } finally {
@@ -318,6 +318,6 @@ open class CustomSeekBarPreference @JvmOverloads constructor(
             mValue = mMinValue
         }
         mSeekBar = SeekBar(context, attrs)
-        layoutResource = com.outsiders.samsungextras.R.layout.preference_custom_seekbar
+        layoutResource = com.samsung.parts.R.layout.preference_custom_seekbar
     }
 }

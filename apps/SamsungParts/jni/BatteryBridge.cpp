@@ -2,16 +2,16 @@
 #include <hidl/HidlSupport.h>
 #include <hidl/LegacySupport.h>
 #include <hidl/Status.h>
-#include <vendor/outsiders/hardware/battery/1.0/IBattery.h>
+#include <vendor/samsung/parts/hardware/battery/1.0/IBattery.h>
 #include "jni.h"
 
 using android::sp;
-using vendor::outsiders::hardware::battery::V1_0::IBattery;
-using vendor::outsiders::hardware::battery::V1_0::Number;
-using vendor::outsiders::hardware::battery::V1_0::SysfsType;
+using vendor::samsung::parts::hardware::battery::V1_0::IBattery;
+using vendor::samsung::parts::hardware::battery::V1_0::Number;
+using vendor::samsung::parts::hardware::battery::V1_0::SysfsType;
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_outsiders_samsungextras_interfaces_Battery_setChargeSysfs(JNIEnv* env,
+Java_com_samsung_parts_interfaces_Battery_setChargeSysfs(JNIEnv* env,
                                                                     __unused jclass obj,
                                                                     jint enable) {
     android::sp<IBattery> service = IBattery::getService();
@@ -23,7 +23,7 @@ Java_com_outsiders_samsungextras_interfaces_Battery_setChargeSysfs(JNIEnv* env,
 }
 
 extern "C" JNIEXPORT jint JNICALL
-Java_com_outsiders_samsungextras_interfaces_Battery_getChargeSysfs(JNIEnv* env,
+Java_com_samsung_parts_interfaces_Battery_getChargeSysfs(JNIEnv* env,
                                                                     __unused jclass obj) {
     android::sp<IBattery> service = IBattery::getService();
     int ret = service->getBatteryStats(SysfsType::CHARGE);
@@ -31,7 +31,7 @@ Java_com_outsiders_samsungextras_interfaces_Battery_getChargeSysfs(JNIEnv* env,
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_outsiders_samsungextras_interfaces_Battery_setFastCharge(JNIEnv* env,
+Java_com_samsung_parts_interfaces_Battery_setFastCharge(JNIEnv* env,
                                                                    __unused jobject obj,
                                                                    jint enable) {
     android::sp<IBattery> service = IBattery::getService();
@@ -42,14 +42,14 @@ Java_com_outsiders_samsungextras_interfaces_Battery_setFastCharge(JNIEnv* env,
     }
 }
 extern "C" JNIEXPORT jint JNICALL
-Java_com_outsiders_samsungextras_interfaces_Battery_getFastChargeSysfs(JNIEnv* env,
+Java_com_samsung_parts_interfaces_Battery_getFastChargeSysfs(JNIEnv* env,
                                                                         __unused jclass obj) {
     android::sp<IBattery> service = IBattery::getService();
     int ret = service->getBatteryStats(SysfsType::FASTCHARGE);
     return ret;
 }
 extern "C" JNIEXPORT jint JNICALL
-Java_com_outsiders_samsungextras_interfaces_Battery_getGeneralBatteryStats(JNIEnv* env,
+Java_com_samsung_parts_interfaces_Battery_getGeneralBatteryStats(JNIEnv* env,
                                                                             __unused jobject obj,
                                                                             jint id) {
     /**

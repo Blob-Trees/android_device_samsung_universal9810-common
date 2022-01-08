@@ -1,4 +1,4 @@
-package com.outsiders.samsungextras.dolby
+package com.samsung.parts.dolby
 
 import android.media.audiofx.AudioEffect
 import java.util.*

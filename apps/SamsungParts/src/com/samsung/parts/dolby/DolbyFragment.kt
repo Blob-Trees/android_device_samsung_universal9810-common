@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.outsiders.samsungextras.dolby
+package com.samsung.parts.dolby
 
 import android.os.Bundle
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
-import com.outsiders.samsungextras.R
+import com.samsung.parts.R
 
 class DolbyFragment : PreferenceFragmentCompat(), Preference.OnPreferenceChangeListener {
     private var DolbyModesPreference: ListPreference? = null

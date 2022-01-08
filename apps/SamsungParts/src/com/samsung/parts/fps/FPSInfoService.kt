@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.outsiders.samsungextras.fps
+package com.samsung.parts.fps
 
 import android.app.Service
 import android.content.BroadcastReceiver
@@ -28,7 +28,7 @@ import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.WindowManager
-import com.outsiders.samsungextras.utils.SurfaceFlingerFPS
+import com.samsung.parts.utils.SurfaceFlingerFPS
 import kotlin.math.roundToInt
 
 open class FPSInfoService : Service() {

@@ -18,7 +18,7 @@
 #include <iostream>
 #include <sstream>
 
-namespace vendor::outsiders::hardware::battery::V1_0 {
+namespace vendor::samsung::parts::hardware::battery::V1_0 {
 
 // Methods from ::android::hardware::battery::V1_0::IBattery follow.
 Return<int32_t> Battery::getBatteryStats(battery::V1_0::SysfsType stats) {
@@ -106,4 +106,4 @@ Return<int32_t> Battery::setBatteryWritable(battery::V1_0::SysfsType stats,
 IBattery* Battery::getInstance(void) {
     return new Battery();
 }
-}  // namespace vendor::outsiders::hardware::battery::V1_0
+}  // namespace vendor::samsung::parts::hardware::battery::V1_0

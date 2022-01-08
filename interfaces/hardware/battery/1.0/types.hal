@@ -11,7 +11,8 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package vendor.outsiders.hardware.battery@1.0;
+
+package vendor.samsung.parts.hardware.battery@1.0;
 
 enum SysfsType : int32_t {
 	CAPACITY_MAX,

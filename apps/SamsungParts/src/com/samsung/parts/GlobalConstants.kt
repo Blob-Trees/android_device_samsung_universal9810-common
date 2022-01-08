@@ -1,4 +1,4 @@
-package com.outsiders.samsungextras
+package com.samsung.parts
 
 object GlobalConstants {
     /**

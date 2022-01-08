@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#define LOG_TAG "vendor.outsiders.hardware.battery@1.0-service"
+#define LOG_TAG "vendor.samsung.parts.hardware.battery@1.0-service"
 
-#include <vendor/outsiders/hardware/battery/1.0/IBattery.h>
+#include <vendor/samsung/parts/hardware/battery/1.0/IBattery.h>
 
 #include <hidl/LegacySupport.h>
 
@@ -23,8 +23,8 @@
 using android::sp;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
-using vendor::outsiders::hardware::battery::V1_0::Battery;
-using vendor::outsiders::hardware::battery::V1_0::IBattery;
+using vendor::samsung::parts::hardware::battery::V1_0::Battery;
+using vendor::samsung::parts::hardware::battery::V1_0::IBattery;
 
 int main() {
     int ret;

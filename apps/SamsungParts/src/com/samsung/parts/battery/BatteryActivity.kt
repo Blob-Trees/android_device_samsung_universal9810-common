@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.outsiders.samsungextras.dolby
+package com.samsung.parts.battery
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -21,15 +21,15 @@ import androidx.fragment.app.FragmentActivity
 import com.android.internal.R.id.content
 import com.android.internal.R.id.home
 
-class DolbyActivity : FragmentActivity() {
+class BatteryActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val fragment = this.supportFragmentManager.findFragmentById(content)
-        val dolbyFragment: DolbyFragment
+        val batteryFragment: BatteryFragment
         if (fragment == null) {
-            dolbyFragment = DolbyFragment()
+            batteryFragment = BatteryFragment()
             this.supportFragmentManager.beginTransaction()
-                .add(content, dolbyFragment)
+                .add(content, batteryFragment)
                 .commit()
         }
     }

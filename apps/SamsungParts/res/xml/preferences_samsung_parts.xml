@@ -20,8 +20,8 @@
             android:icon="@drawable/ic_sound" >
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.outsiders.samsungextras.speaker.ClearSpeakerActivity"
-                android:targetPackage="com.outsiders.samsungextras" />
+                android:targetClass="com.samsung.parts.speaker.ClearSpeakerActivity"
+                android:targetPackage="com.samsung.parts" />
         </Preference>
         <Preference
             android:key="dolby_settings"
@@ -30,8 +30,8 @@
             android:icon="@drawable/ic_speaker_cleaner_icon" >
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.outsiders.samsungextras.dolby.DolbyActivity"
-                android:targetPackage="com.outsiders.samsungextras" />
+                android:targetClass="com.samsung.parts.dolby.DolbyActivity"
+                android:targetPackage="com.samsung.parts" />
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory
@@ -45,8 +45,8 @@
             android:persistent="true">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.outsiders.samsungextras.battery.BatteryActivity"
-            android:targetPackage="com.outsiders.samsungextras" />
+            android:targetClass="com.samsung.parts.battery.BatteryActivity"
+            android:targetPackage="com.samsung.parts" />
         </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

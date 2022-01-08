@@ -1,6 +1,6 @@
 hidl_interface { 
-    name: "vendor.outsiders.hardware.battery@1.0",
-    root: "vendor.outsiders",  
+    name: "vendor.samsung.parts.hardware.battery@1.0",
+    root: "vendor.samsung.parts",  
     srcs: [
        "types.hal",
        "IBattery.hal",
