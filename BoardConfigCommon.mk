@@ -127,6 +127,9 @@ TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
+# Recovery
+TARGET_USES_AOSP_RECOVERY := true
+
 # Security
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
