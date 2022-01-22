@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package com.android.settings.device;
 
 import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.preference.PreferenceFragment;
 
-import org.lineageos.settings.device.R;
+import com.android.settings.device.R;
 
-import org.lineageos.internal.util.FileUtils;
+import com.android.internal.util.FileUtils;
 
 public class AdvancedDisplayFragment extends PreferenceFragment {
     private mDNIeScenario mmDNIeScenario;

@@ -12,11 +12,6 @@ android_app {
     certificate: "platform",
     platform_apis: true,
 
-    static_libs: [
-        "org.lineageos.platform.internal",
-        "org.lineageos.settings.resources",
-    ],
-
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },

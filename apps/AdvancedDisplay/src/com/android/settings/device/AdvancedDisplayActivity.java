@@ -14,9 +14,19 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package com.android.settings.device;
 
-public class Constants {
-    static final String KEY_MDNIE_SCENARIO = "mdnie_scenario";
-    static final String KEY_MDNIE_ACCESSIBILITY = "mdnie_accessibility";
+import android.os.Bundle;
+
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
+public class AdvancedDisplayActivity extends CollapsingToolbarBaseActivity {
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+                new AdvancedDisplayFragment()).commit();
+    }
 }
