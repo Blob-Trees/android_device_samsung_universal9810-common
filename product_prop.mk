@@ -79,6 +79,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.sensors.smd=false
 
+# Fastbootd
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.fastbootd.available=true
+
 # IORap
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
