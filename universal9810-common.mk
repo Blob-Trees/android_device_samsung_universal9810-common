@@ -12,6 +12,11 @@ TARGET_GAPPS_ARCH := arm64
 FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
+# Advanced Display
+PRODUCT_PACKAGES += \
+    AdvancedDisplay \
+    SamsungDoze
+
 # AptX
 PRODUCT_PACKAGES += \
     libaptX_encoder
