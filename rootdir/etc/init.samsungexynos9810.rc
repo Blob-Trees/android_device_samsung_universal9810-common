@@ -894,33 +894,33 @@ on fs
     chmod 0771 /mnt/vendor/cpefs
     chown system system /mnt/vendor/persist
 
-# FBE Key Partition
+    # FBE Key Partition
     chown system system /keydata
     chmod 0771 /keydata
     restorecon /keydata
 
-# FBE Backup Key Partition
+    # FBE Backup Key Partition
     chown system system /keyrefuge
     chmod 0771 /keyrefuge
     restorecon /keyrefuge
 
-# DQMDBG
+    # DQMDBG
     chown system system /dqmdbg
     chmod 0770 /dqmdbg
     mkdir /dqmdbg/backup 0770 system system
 
-# Permissions for ION
+    # Permissions for ION
     chmod 0660 /sys/class/ion_cma/ion_video_ext/isolated
     chown system system /sys/class/ion_cma/ion_video_ext/isolated
 
-# Permissions for backlight
+    # Permissions for backlight
 	chown system system /sys/class/backlight/panel/brightness
 	chown system system /sys/class/backlight/panel/weakness_ccb
 
-# Permissions for LCD ALPM
+    # Permissions for LCD ALPM
 	chown system system /sys/class/lcd/panel/alpm
 
-# Permissions for LCD
+    # Permissions for LCD
 	chown system radio /sys/class/lcd/panel/manufacture_code
 	chown system radio /sys/class/lcd/panel/lcd_type
 	chown system system /sys/class/lcd/panel/siop_enable
@@ -938,11 +938,11 @@ on fs
 	chown system system /sys/class/lcd/panel/irc_mode
 	chown system system /sys/class/lcd/panel/isc_defect
 
-# Permissions for LCD COPR
+    # Permissions for LCD COPR
 	chown system system /sys/class/lcd/panel/copr
 	chown system system /sys/class/lcd/panel/read_copr
 
-# Permissions for AFC
+    # Permissions for AFC
 	chown system system /sys/class/lcd/panel/copr_roi
 	chown system system /sys/class/lcd/panel/brt_avg
 	chown system system /sys/class/mdnie/mdnie/afc
@@ -950,31 +950,31 @@ on fs
 	mkdir /efs/afc 0700 system system
 	chmod 700 /efs/afc
 
-# Permissions for LCD SELF MASK
+    # Permissions for LCD SELF MASK
 	chown system system /sys/class/lcd/panel/self_mask
 
-# Permissions for LCD SELF MOVE
+    # Permissions for LCD SELF MOVE
 	chown system system /sys/class/lcd/panel/self_move
 
-# Permissions for LCD DPUI
+    # Permissions for LCD DPUI
 	chown system system /sys/class/lcd/panel/dpui
 	chown system system /sys/class/lcd/panel/dpui_dbg
 	chown system system /sys/class/lcd/panel/dpci
 	chown system system /sys/class/lcd/panel/dpci_dbg
 
-# Permissions for PANEL POC
+    # Permissions for PANEL POC
 	chmod 0660 /dev/poc
 	chown system system /dev/poc
 
-# Permissions for self_display
+    # Permissions for self_display
 	chmod 0660 /dev/self_display
 	chown system system /dev/self_display
 
-# permissions for BCDS systrace
+    # permissions for BCDS systrace
 	chmod 0666 /sys/class/lcd/panel/fingerprint
 	chown system media_rw /sys/class/lcd/panel/fingerprint
 
-# Permissions for MDNIE
+    # Permissions for MDNIE
 	chown system media_rw /sys/class/mdnie/mdnie/bypass
 	chown system media_rw /sys/class/mdnie/mdnie/mode
 	chown system media_rw /sys/class/mdnie/mdnie/scenario
@@ -990,38 +990,38 @@ on fs
 	chown system system /sys/class/mdnie/mdnie/whiteRGB
 	chown system system /sys/class/mdnie/mdnie/light_notification
 
-# Permissions for System LSI NFC
-# NFC : Permissions for NFC
+    # Permissions for System LSI NFC
+    # NFC : Permissions for NFC
     chmod 0660 /dev/sec-nfc
     chown nfc nfc /dev/sec-nfc
-# Permissions for S.LSI ESE
+    # Permissions for S.LSI ESE
     chmod 0660 /dev/p3
     chown system system /dev/p3
 
-# Permissions for Displayport
-# DP AUX switch control for factory test
+    # Permissions for Displayport
+    # DP AUX switch control for factory test
     chmod 0660 /sys/class/dp_sec/dp_sbu_sw_sel
     chown system system /sys/class/dp_sec/dp_sbu_sw_sel
-# DP DEX control
+    # DP DEX control
     chmod 0660 /sys/class/dp_sec/dex
     chown system system /sys/class/dp_sec/dex
-# DP AUX dev control
+    # DP AUX dev control
     chmod 0660 /dev/secdp_aux
     chown system system /dev/secdp_aux
-# DP error info
+    # DP error info
     chmod 0660 /sys/class/dp_sec/dp_error_info
     chown system system /sys/class/dp_sec/dp_error_info
-# DP DRM
+    # DP DRM
     chmod 0660 /sys/class/dp_sec/dp_drm
     chown system system /sys/class/dp_sec/dp_drm
 
-# Copy DRM Key
-#    copy /system/app/wv.keys /factory/wv.keys
+    # Copy DRM Key
+    # copy /system/app/wv.keys /factory/wv.keys
 
-# Permission for DRM Key
-#    chmod 0644 /factory/wv.keys
+    # Permission for DRM Key
+    # chmod 0644 /factory/wv.keys
 
-# SVC LED
+    # SVC LED
     chown system system /sys/class/sec/led/led_r
     chown system system /sys/class/sec/led/led_g
     chown system system /sys/class/sec/led/led_b
@@ -1044,11 +1044,15 @@ on fs
     chown system system /sys/class/sec/led/led_br_lev
     chown system system /sys/class/sec/led/led_lowpower
 
-#load ecd firmware
+    # Load ecd firmware
     write /proc/ecd/load_firmware 1
 
-# ARGOSD network_throughput
+    # ARGOSD network_throughput
     chown system system /dev/network_throughput
+
+    # ISunlightEnhancement
+    chown system system /sys/class/mdnie/mdnie/lux
+    chmod 0644 /sys/class/mdnie/mdnie/lux
 
 # ARGOSD
 service argos-daemon /vendor/bin/argosd
