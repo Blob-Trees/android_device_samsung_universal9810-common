@@ -337,7 +337,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service.universal9810-haptic
+    android.hardware.vibrator-service.universal9810
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
