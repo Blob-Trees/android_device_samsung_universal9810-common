@@ -17,24 +17,26 @@ import java.util.*
 
 class DolbyTile : TileService() {
     private var dolbyCore = DolbyCore()
+    public var dolbyActive = dolbyCore.audioEffect.enabled
 
     override fun onStartListening() {
         updateTile()
     }
 
     override fun onClick() {
-        if (dolbyCore.audioEffect.enabled == true) {
-            dolbyCore.audioEffect.enabled = false
+        if (dolbyActive == true) {
+            dolbyActive = false
         } else {
-            dolbyCore.audioEffect.enabled = true
+            dolbyActive = true
         }
         updateTile()
     }
 
     private fun updateTile() {
+        dolbyCore.audioEffect.enabled = dolbyActive
         val tile = qsTile
         tile.state =
-            if (dolbyCore.audioEffect.enabled == true) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+            if (dolbyActive == true) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
         tile.updateTile()
     }
 }
