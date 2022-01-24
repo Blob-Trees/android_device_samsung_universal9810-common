@@ -109,6 +109,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Security
 PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.sys.mobicoredaemon.enable=true \
     security.mdf.result=None \
     security.mdf=None \
     ro.hardware.keystore=mdfpp \
