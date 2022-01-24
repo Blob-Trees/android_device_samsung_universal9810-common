@@ -16,22 +16,27 @@ import java.util.*
 
 class GlovelyCore : BroadcastReceiver() {
     public var GlovelyActive = false
-    val spListener = SharedPreferences.OnSharedPreferenceChangeListener { sp, key ->
-        when(key) {
-            SamsungSettings.gloveMode -> {
-                val value = sp.getBoolean(key, false)
-                val cmd = if(value) "glove_mode,1" else "glove_mode,0"
-                val ret = tsCmd(cmd)
-                Log.e("Glovely", "Setting glove mode to $cmd got $ret")
-            }
-        }
-    }
 
     override fun onReceive(context: Context, intent: Intent) {
         
     }
 
+    fun switchGlovelyModes() {
+        val value = sp.getBoolean(key, false)
+        val cmd = if(value) "glove_mode,1" else "glove_mode,0"
+        val ret = tsCmd(cmd)
+        Log.e("Glovely", "Setting glove mode to $cmd got $ret")
+    }
+
     companion object {
         public const val TAG = "Glovely"
+
+        fun tsCmd(cmd: String): String {
+            File("${tspBase}/cmd").writeText(cmd+"\n")
+            val status = File("${tspBase}/cmd_status").readText().trim()
+            val ret = File("${tspBase}/cmd_result").readText().trim()
+            if(status != "OK") Log.e("Glovely", "Samsung TSP answered $status when doing $cmd (Got $ret)")
+            return ret
+        }
     }
 }

@@ -22,11 +22,7 @@ class GlovelyTile : TileService() {
     }
 
     override fun onClick() {
-        if (glcore.GlovelyActive == true) {
-            glcore.GlovelyActive = false
-        } else {
-            glcore.GlovelyActive = true
-        }
+        glcore.switchGlovelyMode()
         updateTile()
     }
 
