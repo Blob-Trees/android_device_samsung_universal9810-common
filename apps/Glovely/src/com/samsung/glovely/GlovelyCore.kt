@@ -28,6 +28,11 @@ class GlovelyCore : BroadcastReceiver() {
         val cmd = if(value) "glove_mode,1" else "glove_mode,0"
         val ret = tsCmd(cmd)
         Log.e("Glovely", "Setting glove mode to $cmd got $ret")
+        if($ret == 0) {
+            GlovelyActive = false
+        } else {
+            GlovelyActive = true
+        }
     }
 
     companion object {
