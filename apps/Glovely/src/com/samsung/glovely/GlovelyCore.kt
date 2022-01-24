@@ -18,7 +18,9 @@ class GlovelyCore : BroadcastReceiver() {
     public var GlovelyActive = false
 
     override fun onReceive(context: Context, intent: Intent) {
-        
+        Log.e("Glovely", "Samsung TS: ${tsCmd("get_chip_vendor")}:${tsCmd("get_chip_name")}")
+        Log.e("Glovely", "Samsung TS: Supports glove_mode ${tsCmdExists("glove_mode")}")
+        Log.e("Glovely", "Samsung TS: Supports aod_enable ${tsCmdExists("aod_enable")}")
     }
 
     fun switchGlovelyModes() {
@@ -30,6 +32,7 @@ class GlovelyCore : BroadcastReceiver() {
 
     companion object {
         public const val TAG = "Glovely"
+        val tspBase = "/sys/devices/virtual/sec/tsp"
 
         fun tsCmd(cmd: String): String {
             File("${tspBase}/cmd").writeText(cmd+"\n")
@@ -37,6 +40,11 @@ class GlovelyCore : BroadcastReceiver() {
             val ret = File("${tspBase}/cmd_result").readText().trim()
             if(status != "OK") Log.e("Glovely", "Samsung TSP answered $status when doing $cmd (Got $ret)")
             return ret
+        }
+
+        fun tsCmdExists(cmd: String): Boolean {
+            val supported = File("${tspBase}/cmd_list").readLines()
+            return supported.contains(cmd)
         }
     }
 }
