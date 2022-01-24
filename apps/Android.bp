@@ -12,15 +12,3 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-android_app_import {
-    name: "CameraGo",
-    owner: "google",
-    apk: "CameraGo/CameraGo.apk",
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    overrides: ["Camera", "Camera2", "Snap"],
-}

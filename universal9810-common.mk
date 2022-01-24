@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.3 \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4 \
-    CameraGo
+    Snap
 
 # ConfigStore
 PRODUCT_PACKAGES += \
@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
 # Dolby
 PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -101,6 +105,10 @@ PRODUCT_PACKAGES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# FastCharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.samsung
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -172,6 +180,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0.vendor \
     libkeymaster3device
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service.samsung-exynos
 
 # libprotobuf
 PRODUCT_PACKAGES += \
@@ -358,6 +370,14 @@ PRODUCT_COPY_FILES += \
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
+
+# Touch HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
