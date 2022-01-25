@@ -1,23 +1,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (C) 2022 The LineageOS Project
 
-# Screen density
-PRODUCT_AAPT_CONFIG := xlarge
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
-TARGET_BOOT_ANIMATION_RES := 1440
-
-# GAPPS
-TARGET_GAPPS_ARCH := arm64
-FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
 # AptX
 PRODUCT_PACKAGES += \
     libaptX_encoder
-
-# Audio
-TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
     SamsungDAP \
@@ -48,12 +34,6 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libldacBT_bco \
     libldacBT_dec
-
-# Boot animation
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-TARGET_SCREEN_HEIGHT := 2960
-TARGET_SCREEN_WIDTH := 1440
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -135,6 +115,13 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor \
     vndservicemanager
 
+# Init
+PRODUCT_PACKAGES += \
+    init.safailnet.rc \
+    fstab.zram \
+    init.samsung.rc \
+    init.usb_accessory.rc
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-sec-fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-sec-fp.kl \
@@ -148,24 +135,16 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
     libkeymaster3device
 
+# libprotobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite \
+    libprotobuf-cpp-lite-vendorcompat
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.universal9810
-
-# S-Pen
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/spen/samsung-sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
-
-# SP-NDK
-PRODUCT_PACKAGES += \
-    libvulkan
-
-# Init
-PRODUCT_PACKAGES += \
-    init.safailnet.rc \
-    fstab.zram \
-    init.samsung.rc \
-    init.usb_accessory.rc
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -305,21 +284,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy
 
-# libprotobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite \
-    libprotobuf-cpp-lite-vendorcompat
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.universal9810-multihal \
     libsensorndkbridge
 
-# SYSCONFIG
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Shims
 PRODUCT_PACKAGES += \
@@ -328,8 +299,17 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+# SP-NDK
+PRODUCT_PACKAGES += \
+    libvulkan
+
+# SYSCONFIG
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
+# S-Pen
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/spen/samsung-sec_e-pen.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/sec_e-pen.idc
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -342,9 +322,6 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
-
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
