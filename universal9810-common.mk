@@ -2,9 +2,11 @@
 # Copyright (C) 2022 The LineageOS Project
 
 # AptX
-PRODUCT_PACKAGES += \
-    libaptX_encoder
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/libaptX/libaptX_encoder:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    $(LOCAL_PATH)/libaptX/libaptXHD_encoder:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so
 
+# Audio
 PRODUCT_PACKAGES += \
     SamsungDAP \
     android.hardware.audio.effect@7.0-impl \
