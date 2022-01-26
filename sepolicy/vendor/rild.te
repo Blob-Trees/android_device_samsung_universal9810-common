@@ -1,5 +1,6 @@
 allow rild proc_net:file write;
 allow rild vendor_data_file:file create_file_perms;
+allow rild log_vendor_data_file:dir create_dir_perms;
 
 # /dev/umts_ipc0
 allow rild radio_device:chr_file ioctl;
@@ -28,3 +29,5 @@ allow rild hal_audio_default:file r_file_perms;
 allow rild hal_sec_radio_hwservice:hwservice_manager add;
 allow rild hal_sec_radio_bridge_hwservice:hwservice_manager add;
 allow rild hal_sec_radio_channel_hwservice:hwservice_manager add;
+
+dontaudit rild default_prop:file read;
