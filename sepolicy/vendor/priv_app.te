@@ -1,7 +1,8 @@
-# priv_app.te
+# /dev/mali0
+allow priv_app gpu_device:chr_file rw_file_perms;
 
 allow priv_app debugfs_ion:dir search;
 allow priv_app debugfs_mali:dir search;
 allow priv_app debugfs_mali_mem:dir search;
 
-dontaudit priv_app sysfs_android_usb:file open;
+allow priv_app sysfs_zram:file r_file_perms;

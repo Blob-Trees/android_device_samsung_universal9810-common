@@ -1,22 +1,7 @@
-# hal_power_default.te
-
-allow hal_power_default{
-    sysfs_backlight_writable
-    sysfs_batteryinfo
-    sysfs_devices_system_cpu
-    sysfs_graphics
-    sysfs_light
-    sysfs_sec_tsp
-}:dir r_dir_perms;
-
-allow hal_power_default{
-    sysfs_backlight_writable
-    sysfs_batteryinfo
-    sysfs_devices_system_cpu
-    sysfs_graphics
-    sysfs_light
-    sysfs_sec_tsp
-}:file rw_file_perms;
-
-# Virtual
+allow hal_power_default sysfs_graphics:file r_file_perms;
+allow hal_power_default sysfs_input:file r_file_perms;
 allow hal_power_default sysfs_virtual:dir r_dir_perms;
+allow hal_power_default sysfs_virtual:file r_file_perms;
+allow hal_power_default sysfs_spi_writeable:dir r_dir_perms;
+allow hal_power_default sysfs_spi_writeable:file rw_file_perms;
+allow hal_power_default sysfs_touchscreen_writable:dir r_dir_perms;

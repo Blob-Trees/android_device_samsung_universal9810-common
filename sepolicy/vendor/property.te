@@ -1,17 +1,11 @@
-# Audio
-vendor_internal_prop(vendor_audio_prop);
+# modemloader
+type modemloader_prop, property_type;
 
-# Camera
-vendor_internal_prop(vendor_camera_prop);
+type persist_rmnet_prop, property_type;
+type persist_data_df_prop, property_type;
+type persist_data_wda_prop, property_type;
 
-# HWC
-vendor_internal_prop(vendor_hwc_prop);
-
-# NFC
-vendor_internal_prop(vendor_nfc_prop);
-
-# OMX
-vendor_internal_prop(vendor_omx_prop);
-
-# Radio
-vendor_internal_prop(clatd_radio_prop)
+type vendor_camera_prop, property_type;
+type vendor_factory_prop, property_type;
+type vendor_gps_prop, property_type;
+type vendor_nfc_prop, property_type;
