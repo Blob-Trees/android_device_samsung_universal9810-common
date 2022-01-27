@@ -8,3 +8,5 @@ allow kernel device:dir create_dir_perms;
 allow kernel self:capability { mknod };
 
 allow kernel sysfs_virtual:dir { search };
+allow kernel sysfs_virtual:file { read };
+allow kernel sysfs_virtual:file { write };

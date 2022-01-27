@@ -45,6 +45,7 @@ allow init sysfs_bt_writable:file setattr;
 allow init sysfs_graphics:file create_file_perms;
 allow init sysfs_touchscreen_writable:file setattr;
 allow init sysfs_scsi_host_writable:file { write };
+allow init sysfs_scsi_host_writable:file { open };
 
 allow init system_server:binder { transfer call };
 allow init device:chr_file ioctl;
