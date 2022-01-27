@@ -9,19 +9,19 @@ genfscon debugfs /dma_buf                         u:object_r:debugfs_ion_dma:s0
 # PROC
 genfscon proc /extra                              u:object_r:proc_extra:s0
 genfscon proc /reset_reason                       u:object_r:proc_reset_reason:s0
-genfscon proc /reset_reason_extra_info            u:object_r:proc_reset_reason_extra_info:s0
 genfscon proc /sys/vm/swappiness                  u:object_r:proc_swapiness:s0
 
 # SYSFS
 
 # class
 genfscon sysfs /class/camera                      u:object_r:sysfs_camera:s0
-genfscon sysfs /class/input/input[0-9]            u:object_r:sysfs_sensors:s0
+genfscon sysfs /class/input/input4                u:object_r:sysfs_sensors:s0
+genfscon sysfs /class/input/input6                u:object_r:sysfs_sensors:s0
 genfscon sysfs /class/video4linux                 u:object_r:sysfs_v4l:s0
 
 # devices
 genfscon sysfs /devices/virtual/sec/led/led_blink                                 u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/11ce0000.speedy/i2c-6/6-0003/input/              u:object_r:sysfs_touchscreen_writable:s0
+genfscon sysfs /devices/platform/108e0000.hsi2c/i2c-5/5-0049/input/               u:object_r:sysfs_touchscreen_writable:s0
 genfscon sysfs /devices/platform/10970000.spi/                                    u:object_r:sysfs_spi_writeable:s0
 genfscon sysfs /devices/platform/108c0000.spi/                                    u:object_r:sysfs_spi_writeable:s0
 genfscon sysfs /devices/platform/10460000.spi/                                    u:object_r:sysfs_spi_writeable:s0
@@ -67,12 +67,13 @@ genfscon sysfs /devices/virtual/android_usb/android0         u:object_r:sysfs_an
 genfscon sysfs /devices/virtual/camera                       u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/virtual/camera/rear/fw_update        u:object_r:sysfs_camera_writable:s0
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info u:object_r:sysfs_camera_writable:s0
-genfscon sysfs /devices/virtual/camera/flash(/.*)?           u:object_r:sysfs_camera_writable:s0
-genfscon sysfs /devices/virtual/input/input[0-9]             u:object_r:sysfs_sensors_writable:s0
+genfscon sysfs /devices/virtual/camera/flash/rear_flash      u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/input/input3                 u:object_r:sysfs_sensors_writable:s0
+genfscon sysfs /devices/virtual/input/input4                 u:object_r:sysfs_sensors_writable:s0
 
 #genfscon sysfs /devices/virtual/sec/switch                          u:object_r:sysfs_sec_switch:s0
-genfscon sysfs /devices/virtual/sec/sensorhub/mcu_power              u:object_r:sysfs_sensorhub_writable:s0
-genfscon sysfs /devices/virtual/usb_notify/usb_control(/.*)?         u:object_r:sysfs_usb_writable:s0
+genfscon sysfs /devices/virtual/sec/sensorhub/mcu_power             u:object_r:sysfs_sensorhub_writable:s0
+genfscon sysfs /devices/virtual/usb_notify/usb_control/usb_hw_param u:object_r:sysfs_usb_writable:s0
 
 genfscon sysfs /firmware/devicetree/base/argos                 u:object_r:sysfs_argos:s0
 genfscon sysfs /firmware/devicetree/base/model_info-system_rev u:object_r:sysfs_info:s0
