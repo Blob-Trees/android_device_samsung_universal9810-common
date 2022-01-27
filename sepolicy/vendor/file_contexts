@@ -121,15 +121,7 @@
 /sys/devices/platform/certify_hall/input/input8(/.*)?                                           u:object_r:sysfs_input:s0
 
 # lcd
-/sys/devices/platform/panel_drv@001/lcd/panel/adaptive_control                                  u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/alpm                                              u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/dpui                                              u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/dpui_dbg                                          u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/lcd_type                                          u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/lux                                               u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/manufacture_code                                  u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/temperature                                       u:object_r:sysfs_lcd:s0
-/sys/devices/platform/panel_drv@001/lcd/panel/window_type                                       u:object_r:sysfs_lcd:s0
+/sys/devices/platform/panel_drv@00[0-9]/lcd/panel(/.*)?                                         u:object_r:sysfs_lcd:s0
 
 # modem
 /sys/module/modem_ctrl_ss310ap/parameters/ds_detect                                             u:object_r:sysfs_modem:s0
