@@ -13,7 +13,6 @@ PRODUCT_COPY_FILES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
-    SamsungDAP \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
