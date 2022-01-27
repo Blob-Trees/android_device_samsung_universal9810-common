@@ -7,3 +7,10 @@ dontaudit vendor_init system_prop:file read;
 allow vendor_init proc_swapiness:file rw_file_perms;
 allow vendor_init cpdebug_efs_file:lnk_file getattr;
 allow vendor_init ssm_efs_file:file getattr;
+
+allow vendor_init default_prop:file { read };
+allow vendor_init device:chr_file { write };
+allow vendor_init tee_prop:property_service { set };
+allow vendor_init tmpfs:dir { write };
+allow vendor_init vold_prop:property_service { set };
+allow vendor_init vts_status_prop:file { read };
