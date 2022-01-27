@@ -31,3 +31,7 @@ allow rild hal_sec_radio_bridge_hwservice:hwservice_manager add;
 allow rild hal_sec_radio_channel_hwservice:hwservice_manager add;
 
 dontaudit rild default_prop:file read;
+
+allow rild hal_sec_radio_bridge_hwservice:hwservice_manager { find };
+allow rild hal_sec_radio_channel_hwservice:hwservice_manager { find };
+allow rild hal_sec_radio_hwservice:hwservice_manager { find };

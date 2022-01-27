@@ -1,0 +1,6 @@
+allow init hal_fingerprint_hwservice:hwservice_manager { add  find };
+allow init hal_light_service:service_manager { add };
+allow init hal_neuralnetworks_hwservice:hwservice_manager { add  find };
+allow init hal_nfc_hwservice:hwservice_manager { add  find };
+allow init hal_sensors_hwservice:hwservice_manager { add  find };
+allow init hidl_base_hwservice:hwservice_manager { add };

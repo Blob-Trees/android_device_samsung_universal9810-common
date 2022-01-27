@@ -14,3 +14,5 @@ allow hal_gnss_default vndbinder_device:chr_file rw_file_perms;
 
 # Connect to socket
 allow hal_gnss_default gpsd:unix_stream_socket connectto;
+
+allow hal_gnss_default default_android_hwservice:hwservice_manager { add  find };
