@@ -4,3 +4,6 @@ allow init hal_neuralnetworks_hwservice:hwservice_manager { add  find };
 allow init hal_nfc_hwservice:hwservice_manager { add  find };
 allow init hal_sensors_hwservice:hwservice_manager { add  find };
 allow init hidl_base_hwservice:hwservice_manager { add };
+allow init mnt_vendor_file:dir { mounton };
+allow init sysfs_scsi_host_writable:file { write };
+allow init vendor_overlay_file:dir { mounton };
