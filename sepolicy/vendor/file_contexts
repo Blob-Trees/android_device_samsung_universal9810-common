@@ -79,8 +79,8 @@
 /sys/class/sec/gps/GPS_PWR_EN/value              u:object_r:sysfs_gps:s0
 
 # charger
-/sys/devices/battery/power_supply(/.*)           u:object_r:sysfs_charger:s0
-/sys/class/power_supply/max77865-charger(/.*)    u:object_r:sysfs_charger:s0
+/sys/devices(/.*)                                u:object_r:sysfs_charger:s0
+/sys/class(/.*)                                  u:object_r:sysfs_charger:s0
 /sys/devices/platform(/.*)?                      u:object_r:sysfs_charger:s0
 
 # sec
@@ -90,7 +90,7 @@
 /sys/devices/virtual(/.*)?                       u:object_r:sysfs_virtual:s0
 
 # iio
-/sys/devices/platform/15b70000\.adc/iio:device[0-9](/.*)?                                       u:object_r:sysfs_iio:s0
+/sys/devices/platform(/.*)?                                                                     u:object_r:sysfs_iio:s0
 /sys/bus/iio/devices(/.*)?                                                                      u:object_r:sysfs_iio:s0
 
 # Backlight/Notification LED control
@@ -101,9 +101,6 @@
 
 # rild
 /sys/devices/virtual/misc/multipdp(/.*)                                                         u:object_r:sysfs_multipdp:s0
-
-# mDNIe
-/sys/devices/platform/panel_drv@00[0-9]/lcd/panel(/.*)?                                         u:object_r:sysfs_mdnie:s0
 
 # input
 /sys/devices/platform/gpio_keys/input/input6(/.*)?                                              u:object_r:sysfs_input:s0
