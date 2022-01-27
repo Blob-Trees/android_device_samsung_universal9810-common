@@ -47,6 +47,7 @@ allow init proc:file setattr;
 allow init proc_swapiness:file write;
 allow init proc_extra:file setattr;
 allow init proc_reset_reason:file setattr;
+allow init proc_reset_reason_extra_info:file setattr;
 allow init proc_swapiness:file open;
 
 unix_socket_connect(init, property, rild)

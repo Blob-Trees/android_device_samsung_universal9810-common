@@ -9,6 +9,7 @@ genfscon debugfs /dma_buf                         u:object_r:debugfs_ion_dma:s0
 # PROC
 genfscon proc /extra                              u:object_r:proc_extra:s0
 genfscon proc /reset_reason                       u:object_r:proc_reset_reason:s0
+genfscon proc /reset_reason_extra_info            u:object_r:proc_reset_reason_extra_info:s0
 genfscon proc /sys/vm/swappiness                  u:object_r:proc_swapiness:s0
 
 # SYSFS

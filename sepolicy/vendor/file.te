@@ -19,6 +19,7 @@ type debugfs_ion_dma, fs_type, debugfs_type;
 # proc
 type proc_extra, fs_type, proc_type;
 type proc_reset_reason, fs_type, proc_type;
+type proc_reset_reason_extra_info, fs_type, proc_type;
 type proc_swapiness, fs_type, proc_type;
 
 # data types
