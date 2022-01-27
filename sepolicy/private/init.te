@@ -1,0 +1,1 @@
+allow init sysfs_scsi_host_writable:file { open };

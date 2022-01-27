@@ -1,0 +1,1 @@
+allow kernel sysfs_virtual:file { read };

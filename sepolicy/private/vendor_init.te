@@ -1,0 +1,2 @@
+allow vendor_init device:chr_file { open };
+allow vendor_init tmpfs:dir { add_name };

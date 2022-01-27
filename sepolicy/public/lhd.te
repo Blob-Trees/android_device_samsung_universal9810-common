@@ -1,0 +1,2 @@
+allow lhd sysfs:file { write };
+allow lhd system_data_file:dir { search };
