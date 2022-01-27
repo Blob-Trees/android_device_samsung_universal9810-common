@@ -157,7 +157,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.latch_unsignaled=1
+    ro.surface_flinger.has_wide_color_display=true \
+    ro.surface_flinger.has_HDR_display=true \
+    ro.surface_flinger.use_color_management=true
 
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
