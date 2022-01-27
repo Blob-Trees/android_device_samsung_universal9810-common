@@ -1,2 +1,0 @@
-allow lhd sysfs:file { read };
-allow lhd system_data_file:dir { search };
