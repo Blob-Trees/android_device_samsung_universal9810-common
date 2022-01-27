@@ -10,3 +10,6 @@ allow kernel self:capability { mknod };
 allow kernel sysfs_virtual:dir { search };
 allow kernel sysfs_virtual:file { read };
 allow kernel sysfs_virtual:file { write };
+
+allow kernel efs_file:file { read };
+allow kernel sysfs_virtual:file { open };

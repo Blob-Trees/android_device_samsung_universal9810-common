@@ -5,3 +5,4 @@ allow lhd efs_file:dir search;
 
 allow lhd sysfs:file { read write open };
 allow lhd system_data_file:dir { search };
+allow lhd system_data_file:dir { search };

@@ -1,3 +1,4 @@
 allow cbd factoryprop_efs_file:file r_file_perms;
 allow cbd sysfs_info:file r_file_perms;
 allow cbd sysfs:file { write };
+allow cbd sysfs:file { open };
