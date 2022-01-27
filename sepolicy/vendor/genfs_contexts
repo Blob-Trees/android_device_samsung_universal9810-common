@@ -15,8 +15,7 @@ genfscon proc /sys/vm/swappiness                  u:object_r:proc_swapiness:s0
 
 # class
 genfscon sysfs /class/camera                      u:object_r:sysfs_camera:s0
-genfscon sysfs /class/input/input4                u:object_r:sysfs_sensors:s0
-genfscon sysfs /class/input/input6                u:object_r:sysfs_sensors:s0
+genfscon sysfs /class/input/input[0-9]            u:object_r:sysfs_sensors:s0
 genfscon sysfs /class/video4linux                 u:object_r:sysfs_v4l:s0
 
 # devices
