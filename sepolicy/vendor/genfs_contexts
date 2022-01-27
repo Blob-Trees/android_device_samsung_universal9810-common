@@ -32,11 +32,11 @@ genfscon sysfs /module/modem_ctrl_ss310ap/parameters/ds_detect                  
 genfscon sysfs /devices/platform/11500000.dwmmc2/mmc_host                         u:object_r:sysfs_mmc_host_writable:s0
 genfscon sysfs /devices/platform/11120000.ufs/host0                               u:object_r:sysfs_scsi_host_writable:s0
 genfscon sysfs /devices/platform/15b50000.speedy/i2c-14/14-0000/s2mps17-rtc/rtc   u:object_r:sysfs_rtc:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/type u:object_r:sysfs_batteryinfo_charger_writable:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/chip_id u:object_r:sysfs_batteryinfo_charger_writable:s0
-genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/type u:object_r:sysfs_batteryinfo_charger_writable:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/type     u:object_r:sysfs_batteryinfo_charger_writable:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/chip_id  u:object_r:sysfs_batteryinfo_charger_writable:s0
+genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/type                  u:object_r:sysfs_batteryinfo_charger_writable:s0
 genfscon sysfs /devices/platform/10970000.hsi2c/i2c-13/13-0066/max77865-fuelgauge/power_supply/max77865-fuelgauge/type u:object_r:sysfs_batteryinfo_charger_writable:s0
-genfscon sysfs /devices/platform/10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger u:object_r:sysfs_batteryinfo_charger_writable:s0
+genfscon sysfs /devices/platform/10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger                                u:object_r:sysfs_batteryinfo_charger_writable:s0
 genfscon sysfs /devices/platform/12ca0000.fimc_is_sensor/video4linux              u:object_r:sysfs_v4l_fimc:s0
 genfscon sysfs /devices/platform/12cb0000.fimc_is_sensor/video4linux              u:object_r:sysfs_v4l_fimc:s0
 genfscon sysfs /devices/platform/12cc0000.fimc_is_sensor/video4linux              u:object_r:sysfs_v4l_fimc:s0
