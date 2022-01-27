@@ -66,12 +66,12 @@ genfscon sysfs /devices/virtual/android_usb/android0         u:object_r:sysfs_an
 genfscon sysfs /devices/virtual/camera                       u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/virtual/camera/rear/fw_update        u:object_r:sysfs_camera_writable:s0
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info u:object_r:sysfs_camera_writable:s0
-genfscon sysfs /devices/virtual/camera/flash/rear_flash      u:object_r:sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/camera/flash(/.*)?           u:object_r:sysfs_camera_writable:s0
 genfscon sysfs /devices/virtual/input/input[0-9]             u:object_r:sysfs_sensors_writable:s0
 
 #genfscon sysfs /devices/virtual/sec/switch                          u:object_r:sysfs_sec_switch:s0
 genfscon sysfs /devices/virtual/sec/sensorhub/mcu_power              u:object_r:sysfs_sensorhub_writable:s0
-genfscon sysfs /devices/virtual/usb_notify/usb_control/usb_hw_param  u:object_r:sysfs_usb_writable:s0
+genfscon sysfs /devices/virtual/usb_notify/usb_control(/.*)?         u:object_r:sysfs_usb_writable:s0
 
 genfscon sysfs /firmware/devicetree/base/argos                 u:object_r:sysfs_argos:s0
 genfscon sysfs /firmware/devicetree/base/model_info-system_rev u:object_r:sysfs_info:s0
