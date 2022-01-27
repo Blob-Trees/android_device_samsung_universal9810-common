@@ -104,9 +104,6 @@
 /sys/devices/platform/hall/input/input7(/.*)?                                                   u:object_r:sysfs_input:s0
 /sys/devices/platform/certify_hall/input/input8(/.*)?                                           u:object_r:sysfs_input:s0
 
-# lcd
-/sys/devices/platform/panel_drv@00[0-9]/lcd/panel(/.*)?                                         u:object_r:sysfs_lcd:s0
-
 # modem
 /sys/module/modem_ctrl_ss310ap/parameters(/.*)?                                                 u:object_r:sysfs_modem:s0
 
