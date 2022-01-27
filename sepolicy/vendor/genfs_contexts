@@ -58,7 +58,7 @@ genfscon sysfs /devices/battery/power_supply(/.*)?                              
 genfscon sysfs /devices/platform/samsung_mobile_device(/.*)?                      u:object_r:sysfs_battery_writable:s0
 
 genfscon sysfs /devices/soc0/soc_id                          u:object_r:sysfs_socinfo:s0
-genfscon sysfs /devices/system/chip-id/revision              u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/system/chip-id(/.*)?                 u:object_r:sysfs_ss_writable:s0
 
 genfscon sysfs /devices/virtual/android_usb/android0         u:object_r:sysfs_android_usb:s0
 genfscon sysfs /devices/virtual/camera                       u:object_r:sysfs_camera:s0
