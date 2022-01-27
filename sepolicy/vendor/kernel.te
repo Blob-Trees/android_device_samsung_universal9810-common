@@ -16,3 +16,5 @@ allow kernel sysfs_virtual:file { open };
 
 allow kernel debugfs_mmc:dir { search };
 allow kernel efs_file:file { open };
+allow kernel efs_file:file { read };
+allow kernel efs_file:file { write };
