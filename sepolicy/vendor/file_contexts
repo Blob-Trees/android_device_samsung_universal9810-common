@@ -51,7 +51,7 @@
 /efs/factory\.prop             u:object_r:factoryprop_efs_file:s0
 /efs/TEE(/.*)?                 u:object_r:gatekeeper_efs_file:s0
 /efs/TEE/Store_1.tf            u:object_r:gatekeeper_efs_file:s0
-
+/efs/cpdebug(/.*)?             u:object_r:cpdebug_efs_file:s0
 ####################################
 # data files
 /data/nfc(/.*)?                    u:object_r:nfc_data_file:s0

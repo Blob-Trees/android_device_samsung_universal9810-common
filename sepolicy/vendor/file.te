@@ -4,6 +4,7 @@ type factoryprop_efs_file, file_type;
 type sensor_factoryapp_efs_file, file_type;
 type factorymode_factoryapp_efs_file, file_type;
 type baro_delta_factoryapp_efs_file, file_type;
+type cpdebug_efs_file, fs_type;
 
 # gps
 type gps_socket, file_type;
