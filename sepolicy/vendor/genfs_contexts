@@ -53,14 +53,9 @@ genfscon sysfs /devices/platform/19060000.decon_s/vsync                         
 genfscon sysfs /devices/platform/19050000.decon_t                                 u:object_r:sysfs_decon:s0
 genfscon sysfs /devices/platform/19050000.decon_t/vsync                           u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/bluetooth/rfkill/rfkill0/state                   u:object_r:sysfs_bt_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/battery                     u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/battery/batt_capacity_max   u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/battery/status              u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/battery/type                u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/ac/type                     u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/wireless/type               u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/ps/type                     u:object_r:sysfs_battery_writable:s0
-genfscon sysfs /devices/platform/battery/power_supply/ps/status                   u:object_r:sysfs_battery_writable:s0
+genfscon sysfs /devices/platform/battery/power_supply(/.*)?                       u:object_r:sysfs_battery_writable:s0
+genfscon sysfs /devices/battery/power_supply(/.*)?                                u:object_r:sysfs_battery_writable:s0
+genfscon sysfs /devices/platform/samsung_mobile_device(/.*)?                      u:object_r:sysfs_battery_writable:s0
 
 genfscon sysfs /devices/soc0/soc_id                          u:object_r:sysfs_socinfo:s0
 genfscon sysfs /devices/system/chip-id/revision              u:object_r:sysfs_ss_writable:s0
