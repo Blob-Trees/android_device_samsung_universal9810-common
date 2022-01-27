@@ -15,3 +15,8 @@ allow system_server self:capability sys_module;
 
 # memtrack HAL
 allow system_server debugfs:dir r_dir_perms;
+
+allow system_server {
+    app_zygote
+    crash_dump
+}:process getpgid;
