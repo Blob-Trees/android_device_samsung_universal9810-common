@@ -11,6 +11,7 @@
 
 # camera
 /dev/m2m1shot_scaler0       u:object_r:m2m1shot_device:s0
+/dev/jsqz                   u:object_r:jsqz_device:s0
 
 # usb
 /dev/android_ssusbcon(/.*)? u:object_r:usb_device:s0
@@ -135,6 +136,9 @@
 
 # modem
 /sys/module/modem_ctrl_ss310ap/parameters/ds_detect                                             u:object_r:sysfs_modem:s0
+
+# Soundtrigger
+/dev/vts_fio_dev                                                                                u:object_r:vts_fio_device:s0
 
 # ZRAM
 /sys/devices/virtual/block/zram0/mm_stat                                                        u:object_r:sysfs_zram:s0
