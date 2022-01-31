@@ -1,3 +1,0 @@
-# nfc.te
-
-allow nfc sec_efs_file:dir search;
