@@ -1,0 +1,1408 @@
+type cbd, domain;
+type cbd_exec, exec_type, file_type;
+init_daemon_domain(cbd)
+
+type cbd, domain;
+type cbd_exec, exec_type, file_type;
+init_daemon_domain(cbd)
+
+type vcd, domain;
+type vcd_exec, exec_type, file_type;
+init_daemon_domain(vcd)
+
+type dmd, domain;
+type dmd_exec, exec_type, file_type;
+init_daemon_domain(dmd)
+
+type rfsd, domain;
+type rfsd_exec, exec_type, file_type;
+init_daemon_domain(rfsd)
+
+type sced, domain;
+type sced_exec, exec_type, file_type;
+init_daemon_domain(sced)
+
+type epicd, domain;
+type epicd_exec, exec_type, file_type;
+init_daemon_domain(epicd)
+
+type mcpsd, domain;
+type mcpsd_exec, exec_type, file_type;
+init_daemon_domain(mcpsd)
+
+type rpmbd, domain;
+type rpmbd_exec, exec_type, file_type;
+init_daemon_domain(rpmbd)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type argosd, domain;
+type argosd_exec, exec_type, file_type;
+init_daemon_domain(argosd)
+
+type lhd, domain;
+type lhd_exec, exec_type, file_type;
+init_daemon_domain(lhd)
+
+type hermesd, domain;
+type hermesd_exec, exec_type, file_type;
+init_daemon_domain(hermesd)
+
+type wvkprov, domain;
+type wvkprov_exec, exec_type, file_type;
+init_daemon_domain(wvkprov)
+
+type gpsd, domain;
+type gpsd_exec, exec_type, file_type;
+init_daemon_domain(gpsd)
+
+type rild, domain;
+type rild_exec, exec_type, file_type;
+init_daemon_domain(rild)
+
+type abox, domain;
+type abox_exec, exec_type, file_type;
+init_daemon_domain(abox)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type tzdaemon, domain;
+type tzdaemon_exec, exec_type, file_type;
+init_daemon_domain(tzdaemon)
+
+type wcnss_service, domain;
+type wcnss_service_exec, exec_type, file_type;
+init_daemon_domain(wcnss_service)
+
+type gpsd, domain;
+type gpsd_exec, exec_type, file_type;
+init_daemon_domain(gpsd)
+
+type gllogd, domain;
+type gllogd_exec, exec_type, file_type;
+init_daemon_domain(gllogd)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type hdcp, domain;
+type hdcp_exec, exec_type, file_type;
+init_daemon_domain(hdcp)
+
+type tzdaemon, domain;
+type tzdaemon_exec, exec_type, file_type;
+init_daemon_domain(tzdaemon)
+
+type abox, domain;
+type abox_exec, exec_type, file_type;
+init_daemon_domain(abox)
+
+type vendor_iof, domain;
+type vendor_iof_exec, exec_type, file_type;
+init_daemon_domain(vendor_iof)
+
+type vendor_icd, domain;
+type vendor_icd_exec, exec_type, file_type;
+init_daemon_domain(vendor_icd)
+
+type hal_wifi_hostapd_default, domain;
+type hal_wifi_hostapd_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wifi_hostapd_default)
+
+type gnss_bridge, domain;
+type gnss_bridge_exec, exec_type, file_type;
+init_daemon_domain(gnss_bridge)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type hdcp, domain;
+type hdcp_exec, exec_type, file_type;
+init_daemon_domain(hdcp)
+
+type nwfs, domain;
+type nwfs_exec, exec_type, file_type;
+init_daemon_domain(nwfs)
+
+type tztsd, domain;
+type tztsd_exec, exec_type, file_type;
+init_daemon_domain(tztsd)
+
+type tz_proxy_service, domain;
+type tz_proxy_service_exec, exec_type, file_type;
+init_daemon_domain(tz_proxy_service)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type simmian, domain;
+type simmian_exec, exec_type, file_type;
+init_daemon_domain(simmian)
+
+type snap_utility, domain;
+type snap_utility_exec, exec_type, file_type;
+init_daemon_domain(snap_utility)
+
+type factory_adsp, domain;
+type factory_adsp_exec, exec_type, file_type;
+init_daemon_domain(factory_adsp)
+
+type macloader, domain;
+type macloader_exec, exec_type, file_type;
+init_daemon_domain(macloader)
+
+type mfgloader, domain;
+type mfgloader_exec, exec_type, file_type;
+init_daemon_domain(mfgloader)
+
+type mobicore, domain;
+type mobicore_exec, exec_type, file_type;
+init_daemon_domain(mobicore)
+
+type rild, domain;
+type rild_exec, exec_type, file_type;
+init_daemon_domain(rild)
+
+type remosaicd, domain;
+type remosaicd_exec, exec_type, file_type;
+init_daemon_domain(remosaicd)
+
+type snap_utility, domain;
+type snap_utility_exec, exec_type, file_type;
+init_daemon_domain(snap_utility)
+
+type snap_utility, domain;
+type snap_utility_exec, exec_type, file_type;
+init_daemon_domain(snap_utility)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type vndservicemanager, domain;
+type vndservicemanager_exec, exec_type, file_type;
+init_daemon_domain(vndservicemanager)
+
+type hal_wifi_supplicant_default, domain;
+type hal_wifi_supplicant_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wifi_supplicant_default)
+
+type cnss_dumpcollector, domain;
+type cnss_dumpcollector_exec, exec_type, file_type;
+init_daemon_domain(cnss_dumpcollector)
+
+type btcoex_cont, domain;
+type btcoex_cont_exec, exec_type, file_type;
+init_daemon_domain(btcoex_cont)
+
+type hal_secure_storage_daemon_default, domain;
+type hal_secure_storage_daemon_default_exec, exec_type, file_type;
+init_daemon_domain(hal_secure_storage_daemon_default)
+
+type ant_hidl_default, domain;
+type ant_hidl_default_exec, exec_type, file_type;
+init_daemon_domain(ant_hidl_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_ir_default, domain;
+type hal_ir_default_exec, exec_type, file_type;
+init_daemon_domain(hal_ir_default)
+
+type hal_vr_default, domain;
+type hal_vr_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vr_default)
+
+type hal_uwb_default, domain;
+type hal_uwb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_uwb_default)
+
+type hal_tee_default, domain;
+type hal_tee_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tee_default)
+
+type hal_tee_default, domain;
+type hal_tee_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tee_default)
+
+type hal_drm_default, domain;
+type hal_drm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_drm_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_bootctl_default, domain;
+type hal_bootctl_default_exec, exec_type, file_type;
+init_daemon_domain(hal_bootctl_default)
+
+type hal_wifi_default, domain;
+type hal_wifi_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wifi_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_audio_default, domain;
+type hal_audio_default_exec, exec_type, file_type;
+init_daemon_domain(hal_audio_default)
+
+type hal_power_default, domain;
+type hal_power_default_exec, exec_type, file_type;
+init_daemon_domain(hal_power_default)
+
+type hal_light_default, domain;
+type hal_light_default_exec, exec_type, file_type;
+init_daemon_domain(hal_light_default)
+
+type hal_atrace_default, domain;
+type hal_atrace_default_exec, exec_type, file_type;
+init_daemon_domain(hal_atrace_default)
+
+type hal_health_default, domain;
+type hal_health_default_exec, exec_type, file_type;
+init_daemon_domain(hal_health_default)
+
+type hal_health_default, domain;
+type hal_health_default_exec, exec_type, file_type;
+init_daemon_domain(hal_health_default)
+
+type hal_cas_default, domain;
+type hal_cas_default_exec, exec_type, file_type;
+init_daemon_domain(hal_cas_default)
+
+type hal_lowpan_default, domain;
+type hal_lowpan_default_exec, exec_type, file_type;
+init_daemon_domain(hal_lowpan_default)
+
+type hal_tv_cec_default, domain;
+type hal_tv_cec_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tv_cec_default)
+
+type hal_sem_default, domain;
+type hal_sem_default_exec, exec_type, file_type;
+init_daemon_domain(hal_sem_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_wsm_default, domain;
+type hal_wsm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wsm_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_skpm_default, domain;
+type hal_skpm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_skpm_default)
+
+type hal_drm_default, domain;
+type hal_drm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_drm_default)
+
+type hal_memtrack_default, domain;
+type hal_memtrack_default_exec, exec_type, file_type;
+init_daemon_domain(hal_memtrack_default)
+
+type hal_tv_input_default, domain;
+type hal_tv_input_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tv_input_default)
+
+type hal_vibrator_default, domain;
+type hal_vibrator_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vibrator_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_bluetooth_default, domain;
+type hal_bluetooth_default_exec, exec_type, file_type;
+init_daemon_domain(hal_bluetooth_default)
+
+type hal_dumpstate_default, domain;
+type hal_dumpstate_default_exec, exec_type, file_type;
+init_daemon_domain(hal_dumpstate_default)
+
+type hal_radio_default, domain;
+type hal_radio_default_exec, exec_type, file_type;
+init_daemon_domain(hal_radio_default)
+
+type mediacodec, domain;
+type mediacodec_exec, exec_type, file_type;
+init_daemon_domain(mediacodec)
+
+type hal_keymaster_default, domain;
+type hal_keymaster_default_exec, exec_type, file_type;
+init_daemon_domain(hal_keymaster_default)
+
+type hal_keymaster_default, domain;
+type hal_keymaster_default_exec, exec_type, file_type;
+init_daemon_domain(hal_keymaster_default)
+
+type hal_wifi_default, domain;
+type hal_wifi_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wifi_default)
+
+type hal_uwb_default, domain;
+type hal_uwb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_uwb_default)
+
+type hal_nfc_default, domain;
+type hal_nfc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_nfc_default)
+
+type hal_gatekeeper_default, domain;
+type hal_gatekeeper_default_exec, exec_type, file_type;
+init_daemon_domain(hal_gatekeeper_default)
+
+type hal_contexthub_default, domain;
+type hal_contexthub_default_exec, exec_type, file_type;
+init_daemon_domain(hal_contexthub_default)
+
+type hal_light_default, domain;
+type hal_light_default_exec, exec_type, file_type;
+init_daemon_domain(hal_light_default)
+
+type hal_thermal_default, domain;
+type hal_thermal_default_exec, exec_type, file_type;
+init_daemon_domain(hal_thermal_default)
+
+type hal_gnss_default, domain;
+type hal_gnss_default_exec, exec_type, file_type;
+init_daemon_domain(hal_gnss_default)
+
+type hal_wifi_default, domain;
+type hal_wifi_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wifi_default)
+
+type hal_teeregistry_default, domain;
+type hal_teeregistry_default_exec, exec_type, file_type;
+init_daemon_domain(hal_teeregistry_default)
+
+type hal_tdmb_default, domain;
+type hal_tdmb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tdmb_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_gnss_default, domain;
+type hal_gnss_default_exec, exec_type, file_type;
+init_daemon_domain(hal_gnss_default)
+
+type hal_cas_default, domain;
+type hal_cas_default_exec, exec_type, file_type;
+init_daemon_domain(hal_cas_default)
+
+type hal_power_stats_default, domain;
+type hal_power_stats_default_exec, exec_type, file_type;
+init_daemon_domain(hal_power_stats_default)
+
+type hal_radio_default, domain;
+type hal_radio_default_exec, exec_type, file_type;
+init_daemon_domain(hal_radio_default)
+
+type hal_gnss_default, domain;
+type hal_gnss_default_exec, exec_type, file_type;
+init_daemon_domain(hal_gnss_default)
+
+type hal_light_default, domain;
+type hal_light_default_exec, exec_type, file_type;
+init_daemon_domain(hal_light_default)
+
+type hal_light_default, domain;
+type hal_light_default_exec, exec_type, file_type;
+init_daemon_domain(hal_light_default)
+
+type hal_drm_default, domain;
+type hal_drm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_drm_default)
+
+type hal_soter_sec, domain;
+type hal_soter_sec_exec, exec_type, file_type;
+init_daemon_domain(hal_soter_sec)
+
+type hal_drm_default, domain;
+type hal_drm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_drm_default)
+
+type hal_gnss_default, domain;
+type hal_gnss_default_exec, exec_type, file_type;
+init_daemon_domain(hal_gnss_default)
+
+type hal_radio_config_default, domain;
+type hal_radio_config_default_exec, exec_type, file_type;
+init_daemon_domain(hal_radio_config_default)
+
+type hal_wifi_offload_default, domain;
+type hal_wifi_offload_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wifi_offload_default)
+
+type hal_bluetooth_qti, domain;
+type hal_bluetooth_qti_exec, exec_type, file_type;
+init_daemon_domain(hal_bluetooth_qti)
+
+type hal_keymaster_default, domain;
+type hal_keymaster_default_exec, exec_type, file_type;
+init_daemon_domain(hal_keymaster_default)
+
+type hal_health_default, domain;
+type hal_health_default_exec, exec_type, file_type;
+init_daemon_domain(hal_health_default)
+
+type hal_thermal_default, domain;
+type hal_thermal_default_exec, exec_type, file_type;
+init_daemon_domain(hal_thermal_default)
+
+type hal_evs_default, domain;
+type hal_evs_default_exec, exec_type, file_type;
+init_daemon_domain(hal_evs_default)
+
+type hal_health_storage_default, domain;
+type hal_health_storage_default_exec, exec_type, file_type;
+init_daemon_domain(hal_health_storage_default)
+
+type hal_confirmationui_default, domain;
+type hal_confirmationui_default_exec, exec_type, file_type;
+init_daemon_domain(hal_confirmationui_default)
+
+type hal_secure_element_default, domain;
+type hal_secure_element_default_exec, exec_type, file_type;
+init_daemon_domain(hal_secure_element_default)
+
+type hal_secure_element_default, domain;
+type hal_secure_element_default_exec, exec_type, file_type;
+init_daemon_domain(hal_secure_element_default)
+
+type digital_tv_fullseg, domain;
+type digital_tv_fullseg_exec, exec_type, file_type;
+init_daemon_domain(digital_tv_fullseg)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_vibrator_default, domain;
+type hal_vibrator_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vibrator_default)
+
+type hal_vibrator_default, domain;
+type hal_vibrator_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vibrator_default)
+
+type hal_sensors_default, domain;
+type hal_sensors_default_exec, exec_type, file_type;
+init_daemon_domain(hal_sensors_default)
+
+type hal_power_default, domain;
+type hal_power_default_exec, exec_type, file_type;
+init_daemon_domain(hal_power_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_wsm_default, domain;
+type hal_wsm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wsm_default)
+
+type hal_configstore_default, domain;
+type hal_configstore_default_exec, exec_type, file_type;
+init_daemon_domain(hal_configstore_default)
+
+type hal_broadcastradio_default, domain;
+type hal_broadcastradio_default_exec, exec_type, file_type;
+init_daemon_domain(hal_broadcastradio_default)
+
+type hal_input_classifier_default, domain;
+type hal_input_classifier_default_exec, exec_type, file_type;
+init_daemon_domain(hal_input_classifier_default)
+
+type hal_vendor_epic_service_default, domain;
+type hal_vendor_epic_service_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vendor_epic_service_default)
+
+type hal_knoxai_default, domain;
+type hal_knoxai_default_exec, exec_type, file_type;
+init_daemon_domain(hal_knoxai_default)
+
+type hal_sbtvd_default, domain;
+type hal_sbtvd_default_exec, exec_type, file_type;
+init_daemon_domain(hal_sbtvd_default)
+
+type hal_power_default, domain;
+type hal_power_default_exec, exec_type, file_type;
+init_daemon_domain(hal_power_default)
+
+type hal_bluetooth_btlinux, domain;
+type hal_bluetooth_btlinux_exec, exec_type, file_type;
+init_daemon_domain(hal_bluetooth_btlinux)
+
+type hal_secure_element_default, domain;
+type hal_secure_element_default_exec, exec_type, file_type;
+init_daemon_domain(hal_secure_element_default)
+
+type hal_wvkprov_default, domain;
+type hal_wvkprov_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wvkprov_default)
+
+type hal_proca_default, domain;
+type hal_proca_default_exec, exec_type, file_type;
+init_daemon_domain(hal_proca_default)
+
+type hal_vehicle_default, domain;
+type hal_vehicle_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vehicle_default)
+
+type hal_graphics_allocator_default, domain;
+type hal_graphics_allocator_default_exec, exec_type, file_type;
+init_daemon_domain(hal_graphics_allocator_default)
+
+type hal_graphics_allocator_default, domain;
+type hal_graphics_allocator_default_exec, exec_type, file_type;
+init_daemon_domain(hal_graphics_allocator_default)
+
+type hal_drk_default, domain;
+type hal_drk_default_exec, exec_type, file_type;
+init_daemon_domain(hal_drk_default)
+
+type hal_keymaster_default, domain;
+type hal_keymaster_default_exec, exec_type, file_type;
+init_daemon_domain(hal_keymaster_default)
+
+type hal_usb_default, domain;
+type hal_usb_default_exec, exec_type, file_type;
+init_daemon_domain(hal_usb_default)
+
+type hal_neuralnetworks_default, domain;
+type hal_neuralnetworks_default_exec, exec_type, file_type;
+init_daemon_domain(hal_neuralnetworks_default)
+
+type hal_neuralnetworks_default, domain;
+type hal_neuralnetworks_default_exec, exec_type, file_type;
+init_daemon_domain(hal_neuralnetworks_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_face_default, domain;
+type hal_face_default_exec, exec_type, file_type;
+init_daemon_domain(hal_face_default)
+
+type hal_radio_config_default, domain;
+type hal_radio_config_default_exec, exec_type, file_type;
+init_daemon_domain(hal_radio_config_default)
+
+type hal_fingerprint_default, domain;
+type hal_fingerprint_default_exec, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_default)
+
+type hal_vendor_configstore_default, domain;
+type hal_vendor_configstore_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vendor_configstore_default)
+
+type hal_neuralnetworks_eden_drv_default, domain;
+type hal_neuralnetworks_eden_drv_default_exec, exec_type, file_type;
+init_daemon_domain(hal_neuralnetworks_eden_drv_default)
+
+type hal_ofi_default, domain;
+type hal_ofi_default_exec, exec_type, file_type;
+init_daemon_domain(hal_ofi_default)
+
+type hal_audiocontrol_default, domain;
+type hal_audiocontrol_default_exec, exec_type, file_type;
+init_daemon_domain(hal_audiocontrol_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type digital_tv_fullseg, domain;
+type digital_tv_fullseg_exec, exec_type, file_type;
+init_daemon_domain(digital_tv_fullseg)
+
+type hal_vendor_eden_runtime_default, domain;
+type hal_vendor_eden_runtime_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vendor_eden_runtime_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_graphics_composer_default, domain;
+type hal_graphics_composer_default_exec, exec_type, file_type;
+init_daemon_domain(hal_graphics_composer_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_geotrans_default, domain;
+type hal_geotrans_default_exec, exec_type, file_type;
+init_daemon_domain(hal_geotrans_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_fingerprint_default, domain;
+type hal_fingerprint_default_exec, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_default)
+
+type hal_vendor_a2dpoffload_default, domain;
+type hal_vendor_a2dpoffload_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vendor_a2dpoffload_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_vendor_hwcservice_default, domain;
+type hal_vendor_hwcservice_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vendor_hwcservice_default)
+
+type hal_vendor_exynosdisplayfeature_default, domain;
+type hal_vendor_exynosdisplayfeature_default_exec, exec_type, file_type;
+init_daemon_domain(hal_vendor_exynosdisplayfeature_default)
+
+type hal_camera_default, domain;
+type hal_camera_default_exec, exec_type, file_type;
+init_daemon_domain(hal_camera_default)
+
+type hal_qchdcpkprov_default, domain;
+type hal_qchdcpkprov_default_exec, exec_type, file_type;
+init_daemon_domain(hal_qchdcpkprov_default)
+
+type hal_wvkprov_default, domain;
+type hal_wvkprov_default_exec, exec_type, file_type;
+init_daemon_domain(hal_wvkprov_default)
+
+type python, domain;
+type python_exec, exec_type, file_type;
+init_daemon_domain(python)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type cp_vername, domain;
+type cp_vername_exec, exec_type, file_type;
+init_daemon_domain(cp_vername)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type python, domain;
+type python_exec, exec_type, file_type;
+init_daemon_domain(python)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type cbd, domain;
+type cbd_exec, exec_type, file_type;
+init_daemon_domain(cbd)
+
+type dsms, domain;
+type dsms_exec, exec_type, file_type;
+init_daemon_domain(dsms)
+
+type iofdaemon, domain;
+type iofdaemon_exec, exec_type, file_type;
+init_daemon_domain(iofdaemon)
+
+type icdaemon, domain;
+type icdaemon_exec, exec_type, file_type;
+init_daemon_domain(icdaemon)
+
+type iod, domain;
+type iod_exec, exec_type, file_type;
+init_daemon_domain(iod)
+
+type scs, domain;
+type scs_exec, exec_type, file_type;
+init_daemon_domain(scs)
+
+type bsd, domain;
+type bsd_exec, exec_type, file_type;
+init_daemon_domain(bsd)
+
+type lpm, domain;
+type lpm_exec, exec_type, file_type;
+init_daemon_domain(lpm)
+
+type spqr, domain;
+type spqr_exec, exec_type, file_type;
+init_daemon_domain(spqr)
+
+type rdxd, domain;
+type rdxd_exec, exec_type, file_type;
+init_daemon_domain(rdxd)
+
+type mfdp, domain;
+type mfdp_exec, exec_type, file_type;
+init_daemon_domain(mfdp)
+
+type mfsc, domain;
+type mfsc_exec, exec_type, file_type;
+init_daemon_domain(mfsc)
+
+type imsd, domain;
+type imsd_exec, exec_type, file_type;
+init_daemon_domain(imsd)
+
+type wsmd, domain;
+type wsmd_exec, exec_type, file_type;
+init_daemon_domain(wsmd)
+
+type cassd, domain;
+type cassd_exec, exec_type, file_type;
+init_daemon_domain(cassd)
+
+type ssud, domain;
+type ssud_exec, exec_type, file_type;
+init_daemon_domain(ssud)
+
+type dsms, domain;
+type dsms_exec, exec_type, file_type;
+init_daemon_domain(dsms)
+
+type eris, domain;
+type eris_exec, exec_type, file_type;
+init_daemon_domain(eris)
+
+type service_mode, domain;
+type service_mode_exec, exec_type, file_type;
+init_daemon_domain(service_mode)
+
+type faced, domain;
+type faced_exec, exec_type, file_type;
+init_daemon_domain(faced)
+
+type fsdbg, domain;
+type fsdbg_exec, exec_type, file_type;
+init_daemon_domain(fsdbg)
+
+type ddexe, domain;
+type ddexe_exec, exec_type, file_type;
+init_daemon_domain(ddexe)
+
+type irisd, domain;
+type irisd_exec, exec_type, file_type;
+init_daemon_domain(irisd)
+
+type vendor_ionps, domain;
+type vendor_ionps_exec, exec_type, file_type;
+init_daemon_domain(vendor_ionps)
+
+type service_mode, domain;
+type service_mode_exec, exec_type, file_type;
+init_daemon_domain(service_mode)
+
+type service_mode, domain;
+type service_mode_exec, exec_type, file_type;
+init_daemon_domain(service_mode)
+
+type DMM-daemon, domain;
+type DMM-daemon_exec, exec_type, file_type;
+init_daemon_domain(DMM-daemon)
+
+type storkd, domain;
+type storkd_exec, exec_type, file_type;
+init_daemon_domain(storkd)
+
+type smdexe, domain;
+type smdexe_exec, exec_type, file_type;
+init_daemon_domain(smdexe)
+
+type insthk, domain;
+type insthk_exec, exec_type, file_type;
+init_daemon_domain(insthk)
+
+type sysmon, domain;
+type sysmon_exec, exec_type, file_type;
+init_daemon_domain(sysmon)
+
+type charon, domain;
+type charon_exec, exec_type, file_type;
+init_daemon_domain(charon)
+
+type auditd, domain;
+type auditd_exec, exec_type, file_type;
+init_daemon_domain(auditd)
+
+type diagexe, domain;
+type diagexe_exec, exec_type, file_type;
+init_daemon_domain(diagexe)
+
+type eprosed, domain;
+type eprosed_exec, exec_type, file_type;
+init_daemon_domain(eprosed)
+
+type sec-ril, domain;
+type sec-ril_exec, exec_type, file_type;
+init_daemon_domain(sec-ril)
+
+type dhkprov, domain;
+type dhkprov_exec, exec_type, file_type;
+init_daemon_domain(dhkprov)
+
+type visiond, domain;
+type visiond_exec, exec_type, file_type;
+init_daemon_domain(visiond)
+
+type epmlogd, domain;
+type epmlogd_exec, exec_type, file_type;
+init_daemon_domain(epmlogd)
+
+type heimdall, domain;
+type heimdall_exec, exec_type, file_type;
+init_daemon_domain(heimdall)
+
+type service_mode, domain;
+type service_mode_exec, exec_type, file_type;
+init_daemon_domain(service_mode)
+
+type fsslcmnd, domain;
+type fsslcmnd_exec, exec_type, file_type;
+init_daemon_domain(fsslcmnd)
+
+type edmaudit, domain;
+type edmaudit_exec, exec_type, file_type;
+init_daemon_domain(edmaudit)
+
+type e4defrag, domain;
+type e4defrag_exec, exec_type, file_type;
+init_daemon_domain(e4defrag)
+
+type zygote, domain;
+type zygote_exec, exec_type, file_type;
+init_daemon_domain(zygote)
+
+type perfmond, domain;
+type perfmond_exec, exec_type, file_type;
+init_daemon_domain(perfmond)
+
+type dsms, domain;
+type dsms_exec, exec_type, file_type;
+init_daemon_domain(dsms)
+
+type softsimd, domain;
+type softsimd_exec, exec_type, file_type;
+init_daemon_domain(softsimd)
+
+type redsocks, domain;
+type redsocks_exec, exec_type, file_type;
+init_daemon_domain(redsocks)
+
+type tsdaemon, domain;
+type tsdaemon_exec, exec_type, file_type;
+init_daemon_domain(tsdaemon)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type dtvserver, domain;
+type dtvserver_exec, exec_type, file_type;
+init_daemon_domain(dtvserver)
+
+type heimdall, domain;
+type heimdall_exec, exec_type, file_type;
+init_daemon_domain(heimdall)
+
+type rsudaemon, domain;
+type rsudaemon_exec, exec_type, file_type;
+init_daemon_domain(rsudaemon)
+
+type service_mode, domain;
+type service_mode_exec, exec_type, file_type;
+init_daemon_domain(service_mode)
+
+type vzsysprop, domain;
+type vzsysprop_exec, exec_type, file_type;
+init_daemon_domain(vzsysprop)
+
+type connfwexe, domain;
+type connfwexe_exec, exec_type, file_type;
+init_daemon_domain(connfwexe)
+
+type vramdiskd, domain;
+type vramdiskd_exec, exec_type, file_type;
+init_daemon_domain(vramdiskd)
+
+type visiond, domain;
+type visiond_exec, exec_type, file_type;
+init_daemon_domain(visiond)
+
+type dmb, domain;
+type dmb_exec, exec_type, file_type;
+init_daemon_domain(dmb)
+
+type pa_daemon, domain;
+type pa_daemon_exec, exec_type, file_type;
+init_daemon_domain(pa_daemon)
+
+type fsck, domain;
+type fsck_exec, exec_type, file_type;
+init_daemon_domain(fsck)
+
+type wlbtd, domain;
+type wlbtd_exec, exec_type, file_type;
+init_daemon_domain(wlbtd)
+
+type fsck, domain;
+type fsck_exec, exec_type, file_type;
+init_daemon_domain(fsck)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type tmf_daemon, domain;
+type tmf_daemon_exec, exec_type, file_type;
+init_daemon_domain(tmf_daemon)
+
+type vendor_libsecmbim, domain;
+type vendor_libsecmbim_exec, exec_type, file_type;
+init_daemon_domain(vendor_libsecmbim)
+
+type mmb_mw, domain;
+type mmb_mw_exec, exec_type, file_type;
+init_daemon_domain(mmb_mw)
+
+type vpnclientd, domain;
+type vpnclientd_exec, exec_type, file_type;
+init_daemon_domain(vpnclientd)
+
+type sem, domain;
+type sem_exec, exec_type, file_type;
+init_daemon_domain(sem)
+
+type preparefbe, domain;
+type preparefbe_exec, exec_type, file_type;
+init_daemon_domain(preparefbe)
+
+type idledefrag, domain;
+type idledefrag_exec, exec_type, file_type;
+init_daemon_domain(idledefrag)
+
+type pageboostd, domain;
+type pageboostd_exec, exec_type, file_type;
+init_daemon_domain(pageboostd)
+
+type apaservice, domain;
+type apaservice_exec, exec_type, file_type;
+init_daemon_domain(apaservice)
+
+type apexserver, domain;
+type apexserver_exec, exec_type, file_type;
+init_daemon_domain(apexserver)
+
+type otp_server, domain;
+type otp_server_exec, exec_type, file_type;
+init_daemon_domain(otp_server)
+
+type python, domain;
+type python_exec, exec_type, file_type;
+init_daemon_domain(python)
+
+type tlc_server, domain;
+type tlc_server_exec, exec_type, file_type;
+init_daemon_domain(tlc_server)
+
+type apk_signer, domain;
+type apk_signer_exec, exec_type, file_type;
+init_daemon_domain(apk_signer)
+
+type corehelper, domain;
+type corehelper_exec, exec_type, file_type;
+init_daemon_domain(corehelper)
+
+type fsck, domain;
+type fsck_exec, exec_type, file_type;
+init_daemon_domain(fsck)
+
+type tee_service_daemon, domain;
+type tee_service_daemon_exec, exec_type, file_type;
+init_daemon_domain(tee_service_daemon)
+
+type vendor_location, domain;
+type vendor_location_exec, exec_type, file_type;
+init_daemon_domain(vendor_location)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type sechcserver, domain;
+type sechcserver_exec, exec_type, file_type;
+init_daemon_domain(sechcserver)
+
+type mafpc_write, domain;
+type mafpc_write_exec, exec_type, file_type;
+init_daemon_domain(mafpc_write)
+
+type jackservice, domain;
+type jackservice_exec, exec_type, file_type;
+init_daemon_domain(jackservice)
+
+type bootchecker, domain;
+type bootchecker_exec, exec_type, file_type;
+init_daemon_domain(bootchecker)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type e4defrag, domain;
+type e4defrag_exec, exec_type, file_type;
+init_daemon_domain(e4defrag)
+
+type resetreason, domain;
+type resetreason_exec, exec_type, file_type;
+init_daemon_domain(resetreason)
+
+type cdpredictor, domain;
+type cdpredictor_exec, exec_type, file_type;
+init_daemon_domain(cdpredictor)
+
+type sdp_cryptod, domain;
+type sdp_cryptod_exec, exec_type, file_type;
+init_daemon_domain(sdp_cryptod)
+
+type factory_ssc, domain;
+type factory_ssc_exec, exec_type, file_type;
+init_daemon_domain(factory_ssc)
+
+type FlexibleLog, domain;
+type FlexibleLog_exec, exec_type, file_type;
+init_daemon_domain(FlexibleLog)
+
+type rsudrkproxyd, domain;
+type rsudrkproxyd_exec, exec_type, file_type;
+init_daemon_domain(rsudrkproxyd)
+
+type vendor_location, domain;
+type vendor_location_exec, exec_type, file_type;
+init_daemon_domain(vendor_location)
+
+type nohiddenzone, domain;
+type nohiddenzone_exec, exec_type, file_type;
+init_daemon_domain(nohiddenzone)
+
+type IPSecService, domain;
+type IPSecService_exec, exec_type, file_type;
+init_daemon_domain(IPSecService)
+
+type ikev2_client, domain;
+type ikev2_client_exec, exec_type, file_type;
+init_daemon_domain(ikev2_client)
+
+type multiclientd, domain;
+type multiclientd_exec, exec_type, file_type;
+init_daemon_domain(multiclientd)
+
+type vaultkeeperd, domain;
+type vaultkeeperd_exec, exec_type, file_type;
+init_daemon_domain(vaultkeeperd)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type perfsdkserver, domain;
+type perfsdkserver_exec, exec_type, file_type;
+init_daemon_domain(perfsdkserver)
+
+type service_mode, domain;
+type service_mode_exec, exec_type, file_type;
+init_daemon_domain(service_mode)
+
+type mmb_mw, domain;
+type mmb_mw_exec, exec_type, file_type;
+init_daemon_domain(mmb_mw)
+
+type tima_dump, domain;
+type tima_dump_exec, exec_type, file_type;
+init_daemon_domain(tima_dump)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type gpu_snapshotd, domain;
+type gpu_snapshotd_exec, exec_type, file_type;
+init_daemon_domain(gpu_snapshotd)
+
+type remotedisplay, domain;
+type remotedisplay_exec, exec_type, file_type;
+init_daemon_domain(remotedisplay)
+
+type ss_conn_daemon, domain;
+type ss_conn_daemon_exec, exec_type, file_type;
+init_daemon_domain(ss_conn_daemon)
+
+type at_distributor, domain;
+type at_distributor_exec, exec_type, file_type;
+init_daemon_domain(at_distributor)
+
+type wlandutservice, domain;
+type wlandutservice_exec, exec_type, file_type;
+init_daemon_domain(wlandutservice)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type ss_conn_daemon, domain;
+type ss_conn_daemon_exec, exec_type, file_type;
+init_daemon_domain(ss_conn_daemon)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type freecessmonitor, domain;
+type freecessmonitor_exec, exec_type, file_type;
+init_daemon_domain(freecessmonitor)
+
+type mmb_mw, domain;
+type mmb_mw_exec, exec_type, file_type;
+init_daemon_domain(mmb_mw)
+
+type sensorhubservice, domain;
+type sensorhubservice_exec, exec_type, file_type;
+init_daemon_domain(sensorhubservice)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type sec-sh, domain;
+type sec-sh_exec, exec_type, file_type;
+init_daemon_domain(sec-sh)
+
+type vendor_secril_config_svc, domain;
+type vendor_secril_config_svc_exec, exec_type, file_type;
+init_daemon_domain(vendor_secril_config_svc)
+
+type mmb_mw, domain;
+type mmb_mw_exec, exec_type, file_type;
+init_daemon_domain(mmb_mw)
+
+type mmb_mw, domain;
+type mmb_mw_exec, exec_type, file_type;
+init_daemon_domain(mmb_mw)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type androidshmservice, domain;
+type androidshmservice_exec, exec_type, file_type;
+init_daemon_domain(androidshmservice)
+
+type mmb_mw, domain;
+type mmb_mw_exec, exec_type, file_type;
+init_daemon_domain(mmb_mw)
+
+type install_recovery, domain;
+type install_recovery_exec, exec_type, file_type;
+init_daemon_domain(install_recovery)
+
+type delete_prov_files, domain;
+type delete_prov_files_exec, exec_type, file_type;
+init_daemon_domain(delete_prov_files)
+
+type sdunion_storagevold, domain;
+type sdunion_storagevold_exec, exec_type, file_type;
+init_daemon_domain(sdunion_storagevold)
+
+type move_widevine_data, domain;
+type move_widevine_data_exec, exec_type, file_type;
+init_daemon_domain(move_widevine_data)
+
+type dm_verity_signature_checker, domain;
+type dm_verity_signature_checker_exec, exec_type, file_type;
+init_daemon_domain(dm_verity_signature_checker)
+
+type samsungpowersoundplay, domain;
+type samsungpowersoundplay_exec, exec_type, file_type;
+init_daemon_domain(samsungpowersoundplay)
+
+type secure_storage, domain;
+type secure_storage_exec, exec_type, file_type;
+init_daemon_domain(secure_storage)
+
+type smdac, domain;
+type smdac_exec, exec_type, file_type;
+init_daemon_domain(smdac)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type wait_for_dual_keymaster, domain;
+type wait_for_dual_keymaster_exec, exec_type, file_type;
+init_daemon_domain(wait_for_dual_keymaster)
+
+type oneseg_mw, domain;
+type oneseg_mw_exec, exec_type, file_type;
+init_daemon_domain(oneseg_mw)
+
+type hal_base_default, domain;
+type hal_base_default_exec, exec_type, file_type;
+init_daemon_domain(hal_base_default)
+
+type snap_hidl, domain;
+type snap_hidl_exec, exec_type, file_type;
+init_daemon_domain(snap_hidl)
+
+type snap_hidl, domain;
+type snap_hidl_exec, exec_type, file_type;
+init_daemon_domain(snap_hidl)
+
+type hal_drm_clearkey, domain;
+type hal_drm_clearkey_exec, exec_type, file_type;
+init_daemon_domain(hal_drm_clearkey)
+
+type hal_authfw_default, domain;
+type hal_authfw_default_exec, exec_type, file_type;
+init_daemon_domain(hal_authfw_default)
+
+type hal_ucmtlc_default, domain;
+type hal_ucmtlc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_ucmtlc_default)
+
+type hal_ucmtlc_default, domain;
+type hal_ucmtlc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_ucmtlc_default)
+
+type hal_hdm_default, domain;
+type hal_hdm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_hdm_default)
+
+type hal_hdm_default, domain;
+type hal_hdm_default_exec, exec_type, file_type;
+init_daemon_domain(hal_hdm_default)
+
+type hal_atn_default, domain;
+type hal_atn_default_exec, exec_type, file_type;
+init_daemon_domain(hal_atn_default)
+
+type hal_ddar_default, domain;
+type hal_ddar_default_exec, exec_type, file_type;
+init_daemon_domain(hal_ddar_default)
+
+type hal_tima_default, domain;
+type hal_tima_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tima_default)
+
+type hal_tima_default, domain;
+type hal_tima_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tima_default)
+
+type hal_iccc_default, domain;
+type hal_iccc_default_exec, exec_type, file_type;
+init_daemon_domain(hal_iccc_default)
+
+type hal_snapsec_default, domain;
+type hal_snapsec_default_exec, exec_type, file_type;
+init_daemon_domain(hal_snapsec_default)
+
+type hal_dumpstate_impl, domain;
+type hal_dumpstate_impl_exec, exec_type, file_type;
+init_daemon_domain(hal_dumpstate_impl)
+
+type snap_hidl, domain;
+type snap_hidl_exec, exec_type, file_type;
+init_daemon_domain(snap_hidl)
+
+type hal_payment_default, domain;
+type hal_payment_default_exec, exec_type, file_type;
+init_daemon_domain(hal_payment_default)
+
+type dsms_hidl, domain;
+type dsms_hidl_exec, exec_type, file_type;
+init_daemon_domain(dsms_hidl)
+
+type hal_mpostui_default, domain;
+type hal_mpostui_default_exec, exec_type, file_type;
+init_daemon_domain(hal_mpostui_default)
+
+type hal_arcounter_default, domain;
+type hal_arcounter_default_exec, exec_type, file_type;
+init_daemon_domain(hal_arcounter_default)
+
+type hal_blockchain_default, domain;
+type hal_blockchain_default_exec, exec_type, file_type;
+init_daemon_domain(hal_blockchain_default)
+
+type hal_converter_default, domain;
+type hal_converter_default_exec, exec_type, file_type;
+init_daemon_domain(hal_converter_default)
+
+type vaultkeeperd, domain;
+type vaultkeeperd_exec, exec_type, file_type;
+init_daemon_domain(vaultkeeperd)
+
+type hal_tetheroffload_default, domain;
+type hal_tetheroffload_default_exec, exec_type, file_type;
+init_daemon_domain(hal_tetheroffload_default)
+
