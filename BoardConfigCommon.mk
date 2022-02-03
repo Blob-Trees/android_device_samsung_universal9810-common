@@ -42,8 +42,9 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Graphics
-TARGET_USES_HWC2 := true
-BACKLIGHT_PATH   := "/sys/class/backlight/panel/brightness"
+TARGET_USES_VULKAN := true
+TARGET_USES_HWC2   := true
+BACKLIGHT_PATH     := "/sys/class/backlight/panel/brightness"
 
 # Hacks
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true

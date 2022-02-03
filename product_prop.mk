@@ -148,9 +148,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Skia
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiagl \
-    renderthread.skia.reduceopstasksplitting=true \
-    debug.renderengine.backend=skiaglthreaded
+    debug.hwui.renderer=skiavk \
+    renderthread.skia.reduceopstasksplitting=true
 
 # SOC
 PRODUCT_PRODUCT_PROPERTIES += \
