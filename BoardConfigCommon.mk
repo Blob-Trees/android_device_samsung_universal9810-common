@@ -28,12 +28,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 BOARD_CUSTOM_BT_CONFIG                      := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_HAVE_BLUETOOTH_BCM                    := true
 
-# CTS
-BUILD_FINGERPRINT := "google/oriole/oriole:12/SQ1D.220205.003/8069835:user/release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRIVATE_BUILD_DESC="oriole-user 12 SQ1D.220205.003 8069835 release-keys"
-
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
