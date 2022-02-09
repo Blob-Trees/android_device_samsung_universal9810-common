@@ -44,9 +44,6 @@ TARGET_SEC_FP_HAS_FINGERPRINT_GESTURES := true
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-
 # Graphics
 TARGET_USES_HWC2 := true
 BACKLIGHT_PATH   := "/sys/class/backlight/panel/brightness"
