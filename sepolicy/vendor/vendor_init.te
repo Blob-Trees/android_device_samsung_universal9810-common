@@ -31,3 +31,8 @@ get_prop(vendor_init, vts_status_prop)
 
 set_prop(vendor_init, tee_prop)
 set_prop(vendor_init, vendor_radio_prop)
+
+allow vendor_init default_prop:file { read };
+allow vendor_init device:chr_file { open  write };
+allow vendor_init proc_vm:file { write };
+allow vendor_init system_prop:file { read };

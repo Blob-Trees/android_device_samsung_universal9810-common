@@ -29,3 +29,4 @@ dontaudit hal_camera_default default_prop:file read;
 # Virtual
 allow hal_camera_default sysfs_virtual:dir search;
 allow hal_camera_default sysfs_virtual:file { getattr  open  read };
+allow hal_camera_default sysfs_virtual:file { write };
