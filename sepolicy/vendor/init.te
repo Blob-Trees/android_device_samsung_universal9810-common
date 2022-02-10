@@ -16,6 +16,13 @@ allow init iorapd_data_file:file getattr;
 allow init sysfs_scsi_host:dir relabelfrom;
 allow init sysfs_scsi_host:file relabelfrom;
 
+allow init device:chr_file { write };
+allow init fp_sensor_device:chr_file { write };
+allow init gpu_device:chr_file { write };
+allow init ssp_device:chr_file { write };
+allow init sysfs_hrm:file { write };
+allow init tee_device:chr_file { write };
+
 # PROC
 allow init proc_extra:file setattr;
 
