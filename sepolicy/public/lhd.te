@@ -1,0 +1,1 @@
+allow lhd sysfs:file { open  read };

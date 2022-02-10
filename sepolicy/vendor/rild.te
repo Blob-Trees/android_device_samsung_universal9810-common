@@ -71,3 +71,6 @@ get_prop(rild, vendor_radio_prop)
 set_prop(rild, vendor_radio_prop)
 
 dontaudit rild default_prop:file read;
+allow rild clatd_radio_prop:file { getattr  open  read };
+allow rild default_prop:file { getattr  open };
+allow rild steady_block_device:blk_file { open  read };
