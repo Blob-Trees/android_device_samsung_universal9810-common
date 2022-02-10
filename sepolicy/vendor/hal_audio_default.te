@@ -12,5 +12,7 @@ allow hal_audio_default rild:unix_stream_socket connectto;
 # Allow hal to take wakelock
 wakelock_use(hal_audio_default)
 
-get_prop(hal_audio_default, vendor_audio_prop)allow hal_audio_default device:chr_file { open  read };
+get_prop(hal_audio_default, vendor_audio_prop)
+
+allow hal_audio_default device:chr_file { open  read };
 allow hal_audio_default vendor_radio_prop:file { getattr  open  read };
