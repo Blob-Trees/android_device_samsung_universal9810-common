@@ -111,12 +111,12 @@ TARGET_POWERHAL_VARIANT := samsung
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
-# include device/custom/sepolicy/exynos/sepolicy.mk
-# BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+include device/custom/sepolicy/exynos/sepolicy.mk
+BOARD_SEPOLICY_TEE_FLAVOR := mobicore
 
 # SELinux SLSI
-# include device/samsung_slsi/sepolicy/sepolicy.mk
-# BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+include device/samsung_slsi/sepolicy/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Soong
 BUILD_BROKEN_DUP_RULES := true

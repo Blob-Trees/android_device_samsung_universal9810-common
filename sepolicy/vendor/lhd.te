@@ -21,3 +21,5 @@ allow lhd sysfs_virtual:lnk_file read;
 allow lhd sysfs_sec_gps:lnk_file r_file_perms;
 
 dontaudit lhd system_data_file:dir search;
+
+allow lhd sysfs:file { open  read };

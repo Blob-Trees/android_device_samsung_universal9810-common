@@ -68,3 +68,7 @@ unix_socket_connect(system_server, property, gpsd)
 get_prop(system_server, build_bootimage_prop)
 
 dontaudit system_server persist_block_device:blk_file { getattr ioctl open read write };
+
+allow system_server init:binder { call  transfer };
+allow system_server sysfs_virtual:file { getattr  open  read };
+allow system_server system_block_device:blk_file { getattr  ioctl  open  read  write };

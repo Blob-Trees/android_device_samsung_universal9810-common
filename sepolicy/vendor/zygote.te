@@ -3,3 +3,5 @@
 get_prop(zygote, exported_camera_prop)
 
 dontaudit zygote proc_cmdline:file read;
+
+allow zygote vendor_file:dir { read };
