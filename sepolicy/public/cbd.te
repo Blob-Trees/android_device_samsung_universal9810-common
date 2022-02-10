@@ -1,2 +1,0 @@
-allow cbd steady_block_device:blk_file { open  read };
-allow cbd sysfs:file { open  write };
