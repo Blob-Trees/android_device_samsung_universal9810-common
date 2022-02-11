@@ -826,7 +826,6 @@
 /dev/mali0		u:object_r:gpu_device:s0
 /dev/i2c-20		u:object_r:seiren_device:s0
 /dev/radio0		u:object_r:fm_radio_device:s0
-/dev/nr_dm0		u:object_r:sec_radio_device:s0
 /dev/ttyHS8		u:object_r:ttyhs_device:s0
 /dev/uartcc		u:object_r:nfc_device:s0
 /dev/felica		u:object_r:felica_device:s0
@@ -839,9 +838,6 @@
 /dev/5g_dm0		u:object_r:sec_radio_device:s0
 /dev/btpower		u:object_r:bt_device:s0
 /dev/is_game		u:object_r:game_mode_changer_device:s0
-/dev/nr_ipc0		u:object_r:sec_radio_device:s0
-/dev/nr_ipc1		u:object_r:sec_radio_device:s0
-/dev/nr_rfs0		u:object_r:sec_radio_device:s0
 /dev/ttyHSL2		u:object_r:nfcfelica_device:s0
 /dev/bbd_sio		u:object_r:bbd_device:s0
 /dev/msm_sps		u:object_r:input_device:s0
@@ -868,7 +864,6 @@
 /dev/5g_ipc0		u:object_r:sec_radio_device:s0
 /dev/5g_ipc1		u:object_r:sec_radio_device:s0
 /dev/5g_rfs0		u:object_r:sec_radio_device:s0
-/dev/nr_boot0		u:object_r:sec_radio_device:s0
 /dev/snfc_cen		u:object_r:nfcfelica_device:s0
 /dev/snfc_rfs		u:object_r:nfc_device:s0
 /dev/snfc_pon		u:object_r:nfc_device:s0
@@ -893,7 +888,6 @@
 /dev/video155		u:object_r:vendor_geotrans_device:s0
 /dev/dprof_log		u:object_r:dprof_log_device:s0
 /dev/watchdog1		u:object_r:watchdog_device:s0
-/dev/nr_router		u:object_r:sec_radio_device:s0
 /dev/panel_spi		u:object_r:panel_device:s0
 /dev/snfc_hsel		u:object_r:nfc_device:s0
 /dev/snfc_uart		u:object_r:nfc_device:s0
@@ -954,7 +948,6 @@
 /dev/scaler_ext		u:object_r:vendor_mscl_device:s0
 /dev/mmcblk0rpmb		u:object_r:rpmb_device:s0
 /dev/block/zram0		u:object_r:swap_block_device:s0
-/dev/nr_ramdump0		u:object_r:sec_radio_device:s0
 /system/bin/spqr		u:object_r:spqr_exec:s0
 /system/bin/rdxd		u:object_r:rdxd_exec:s0
 /system/bin/mfdp		u:object_r:mfdp_exec:s0
@@ -1042,7 +1035,6 @@
 /system/bin/dhkprov		u:object_r:dhkprov_exec:s0
 /system/bin/visiond		u:object_r:visiond_exec:s0
 /system/bin/epmlogd		u:object_r:epmlogd_exec:s0
-/dev/modem_boot_spi		u:object_r:sec_radio_device:s0
 /dev/npu_throughput		u:object_r:pm_qos_file:s0
 /dev/cpu_online_max		u:object_r:pm_qos_file:s0
 /dev/cpu_online_min		u:object_r:pm_qos_file:s0
@@ -1349,6 +1341,15 @@
 /sys/firmware/devicetree/base/soc/i2c@a8c000/touchscreen@48/sync-reportrate-120		u:object_r:sysfs_sec_touchscreen:s0
 /sys/devices/platform/soc/890000\.i2c/i2c-0/0-0066/max77705-usbc/typec/port0/power_role		u:object_r:sysfs_ss_writable:s0
 /sys/devices/platform/14360000\.hsi2c/i2c-15/15-0066/max77705-usbc/dual_role_usb/otg_default/data_role		u:object_r:sysfs_usb:s0
+
+# RIL
+/dev/modem_boot_spi                          u:object_r:vendor_radio_device:s0
+/dev/nr_boot0                                u:object_r:vendor_radio_device:s0
+/dev/nr_dm0                                  u:object_r:vendor_radio_device:s0
+/dev/nr_ipc[0-1]                             u:object_r:vendor_radio_device:s0
+/dev/nr_ramdump0                             u:object_r:vendor_radio_device:s0
+/dev/nr_rfs0                                 u:object_r:vendor_radio_device:s0
+/dev/nr_router                               u:object_r:vendor_radio_device:s0
 
 # GNSS
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@[0-9]\.[0-9]-service                    u:object_r:hal_gnss_default_exec:s0
