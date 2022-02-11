@@ -1,7 +1,0 @@
-# priv_app.te
-
-allow priv_app debugfs_ion:dir search;
-allow priv_app debugfs_mali:dir search;
-allow priv_app debugfs_mali_mem:dir search;
-
-dontaudit priv_app sysfs_android_usb:file open;

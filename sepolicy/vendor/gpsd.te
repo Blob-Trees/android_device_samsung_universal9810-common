@@ -1,3 +1,0 @@
-# gpsd.te
-
-dontaudit gpsd system_data_file:dir search;

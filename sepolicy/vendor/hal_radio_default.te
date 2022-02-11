@@ -1,3 +1,0 @@
-# hal_radio_default.te
-
-binder_call(hal_radio_default, rild)
