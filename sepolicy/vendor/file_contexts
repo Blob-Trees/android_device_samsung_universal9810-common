@@ -545,7 +545,6 @@
 /sys/class/devfreq/[^/]+devfreq[^/]+/trans_stat		u:object_r:sysfs_trnas_stat:s0
 /sys/class/devfreq/[^/]+devfreq[^/]+/time_in_state		u:object_r:sysfs_time_in_state:s0
 /sys/class/devfreq/[^/]+devfreq[^/]+/time_in_state_raw		u:object_r:sysfs_time_in_state:s0
-/dev/m2m1shot_scaler.*		u:object_r:m2m1shot_device:s0
 /vendor/firmware/NPU.bin		u:object_r:vendor_npu_firmware_file:s0
 /vendor/bin/moredump.bin		u:object_r:wlbtd_exec:s0
 /data/vendor/ssrdump(/.*)?		u:object_r:ramdump_vendor_data_file:s0
@@ -1342,20 +1341,23 @@
 /sys/devices/platform/soc/890000\.i2c/i2c-0/0-0066/max77705-usbc/typec/port0/power_role		u:object_r:sysfs_ss_writable:s0
 /sys/devices/platform/14360000\.hsi2c/i2c-15/15-0066/max77705-usbc/dual_role_usb/otg_default/data_role		u:object_r:sysfs_usb:s0
 
-# RIL
-/dev/modem_boot_spi                          u:object_r:vendor_radio_device:s0
-/dev/nr_boot0                                u:object_r:vendor_radio_device:s0
-/dev/nr_dm0                                  u:object_r:vendor_radio_device:s0
-/dev/nr_ipc[0-1]                             u:object_r:vendor_radio_device:s0
-/dev/nr_ramdump0                             u:object_r:vendor_radio_device:s0
-/dev/nr_rfs0                                 u:object_r:vendor_radio_device:s0
-/dev/nr_router                               u:object_r:vendor_radio_device:s0
+# Camera
+/dev/m2m1shot_scaler.*		u:object_r:m2m1shot_device:s0
 
 # GNSS
-/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@[0-9]\.[0-9]-service                    u:object_r:hal_gnss_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@[0-9]\.[0-9]-service u:object_r:hal_gnss_default_exec:s0
 
 # Keymaster
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung              u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung u:object_r:hal_keymaster_default_exec:s0
 
 # NFC
-/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@[0-9]\.[0-9]-service\.samsung                    u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@[0-9]\.[0-9]-service\.samsung u:object_r:hal_nfc_default_exec:s0
+
+# RIL
+/dev/modem_boot_spi u:object_r:vendor_radio_device:s0
+/dev/nr_boot0       u:object_r:vendor_radio_device:s0
+/dev/nr_dm0         u:object_r:vendor_radio_device:s0
+/dev/nr_ipc[0-1]    u:object_r:vendor_radio_device:s0
+/dev/nr_ramdump0    u:object_r:vendor_radio_device:s0
+/dev/nr_rfs0        u:object_r:vendor_radio_device:s0
+/dev/nr_router      u:object_r:vendor_radio_device:s0
