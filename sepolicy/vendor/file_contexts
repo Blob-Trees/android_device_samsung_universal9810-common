@@ -1109,7 +1109,6 @@
 /sys/class/earsmart/control/route_value		u:object_r:sysfs_audio_writable:s0
 /sys/class/power_supply/battery/hotspot		u:object_r:sysfs_app_writable:s0
 /sys/class/power_supply/battery/browser		u:object_r:sysfs_app_writable:s0
-/sys/class/timed_output/vibrator/enable		u:object_r:sysfs_vibrator:s0
 /sys/class/earsmart/control/extra_volume		u:object_r:sysfs_audio_writable:s0
 /system/bin/broadcastProcessObserver_ltn		u:object_r:oneseg_mw_exec:s0
 /sys/devices/virtual/audio/earjack/state		u:object_r:sysfs_audio_writable:s0
@@ -1121,13 +1120,11 @@
 /sys/module/cpuidle/parameters/enable_mask		u:object_r:sysfs_ss_writable:s0
 /sys/class/sec_param/sec_param/power_onoff		u:object_r:sysfs_ss_writable:s0
 /sys/class/usb_notify/usb_control/hw_param		u:object_r:sysfs_usb:s0
-/sys/class/timed_output/vibrator/intensity		u:object_r:sysfs_vibrator:s0
 /sys/class/power_supply/battery/pmic_dump_2		u:object_r:sysfs_ss_writable:s0
 /sys/devices/virtual/misc/umts_dm0/dm_state		u:object_r:sysfs_ss_writable:s0
 /sys/class/earsmart/control/veq_control_set		u:object_r:sysfs_audio_writable:s0
 /sys/bus/i2c/drivers/sm5502/7-0025/syssleep		u:object_r:sysfs_ss_writable:s0
 /sys/module/cpuidle/parameters/priv_disable		u:object_r:sysfs_ss_writable:s0
-/sys/class/timed_output/vibrator/multi_freq		u:object_r:sysfs_vibrator:s0
 /sys/bus/i2c/drivers/fsa9480/7-0025/syssleep		u:object_r:sysfs_ss_writable:s0
 /sys/devices/platform/10840000\.uart/error_cnt		u:object_r:sysfs_ss_writable:s0
 /sys/class/dual_role_usb/otg_default/data_role		u:object_r:sysfs_usb:s0
@@ -1144,11 +1141,9 @@
 /sys/module/cpuidle_exynos4/parameters/enable_mask		u:object_r:sysfs_ss_writable:s0
 /sys/devices/virtual/camera/flash/rear_torch_flash		u:object_r:sysfs_camera_flash_file:s0
 /sys/module/cpuidle_exynos64/parameters/enable_mask		u:object_r:sysfs_ss_writable:s0
-/sys/devices/virtual/timed_output/vibrator/intensity		u:object_r:sysfs_vibrator:s0
 /sys/module/exynos3470_cpuidle/parameters/enable_mask		u:object_r:sysfs_ss_writable:s0
 /sys/module/cpuidle_exynos4415/parameters/enable_mask		u:object_r:sysfs_ss_writable:s0
 /sys/module/cpuidle_exynos5433/parameters/enable_mask		u:object_r:sysfs_ss_writable:s0
-/sys/devices/virtual/timed_output/vibrator/multi_freq		u:object_r:sysfs_vibrator:s0
 /sys/devices/platform/exynos-migov/control/set_margin		u:object_r:migov_file:s0
 /vendor/bin/hw/vendor\.samsung\.hardware\.base@1\.0-service		u:object_r:hal_base_default_exec:s0
 /vendor/bin/hw/vendor\.samsung\.hardware\.snap@1\.1-service		u:object_r:snap_hidl_exec:s0
@@ -1162,12 +1157,6 @@
 /sys/module/pm_8x60/modes/cpu0/power_collapse/idle_enabled		u:object_r:sysfs_ss_writable:s0
 /sys/devices/virtual/android_usb/android0/terminal_version		u:object_r:sysfs_android_usb:s0
 /sys/devices/platform/exynos-migov/control/control_profile		u:object_r:migov_file:s0
-/vendor/bin/hw/vendor\.samsung\.hardware\.tlc\.ddar@1\.0-service		u:object_r:hal_ddar_default_exec:s0
-/vendor/bin/hw/vendor\.samsung\.hardware\.tlc\.tima@1\.0-service		u:object_r:hal_tima_default_exec:s0
-/vendor/bin/hw/vendor\.samsung\.hardware\.tlc\.tima@1\.1-service		u:object_r:hal_tima_default_exec:s0
-/vendor/bin/hw/vendor\.samsung\.hardware\.tlc\.iccc@1\.0-service		u:object_r:hal_iccc_default_exec:s0
-/vendor/bin/hw/vendor\.samsung\.hardware\.tlc\.snap@1\.0-service		u:object_r:hal_snapsec_default_exec:s0
-/sys/devices/virtual/timed_output/vibrator/cp_trigger_index		u:object_r:sysfs_vibrator:s0
 /vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.exynos		u:object_r:hal_dumpstate_impl_exec:s0
 /vendor/bin/hw/vendor\.samsung\.hardware\.securesnap@1\.1-service		u:object_r:snap_hidl_exec:s0
 /vendor/bin/hw/vendor\.samsung\.hardware\.tlc\.payment@1\.0-service		u:object_r:hal_payment_default_exec:s0
@@ -1264,6 +1253,14 @@
 
 # NFC
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@[0-9]\.[0-9]-service\.samsung u:object_r:hal_nfc_default_exec:s0
+
+# Vibrator
+/sys/devices/virtual/timed_output/vibrator/cp_trigger_index	u:object_r:sysfs_vibrator:s0
+/sys/class/timed_output/vibrator/enable		                u:object_r:sysfs_vibrator:s0
+/sys/class/timed_output/vibrator/intensity		            u:object_r:sysfs_vibrator:s0
+/sys/class/timed_output/vibrator/multi_freq		            u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/intensity		u:object_r:sysfs_vibrator:s0
+/sys/devices/virtual/timed_output/vibrator/multi_freq		u:object_r:sysfs_vibrator:s0
 
 # RIL
 /dev/modem_boot_spi u:object_r:vendor_radio_device:s0
