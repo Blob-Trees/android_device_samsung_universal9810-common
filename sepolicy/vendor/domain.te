@@ -1,0 +1,9 @@
+# domain.te
+
+# domain.te
+
+allow domain {
+    debugfs_ion
+    debugfs_mali
+    debugfs_mali_mem
+}:dir r_dir_perms;

@@ -16,7 +16,6 @@ genfscon debugfs /binder/proc                                   u:object_r:sec_d
 genfscon debugfs /asv_summary                                   u:object_r:sec_debugfs:s0
 genfscon debugfs /kgsl/proc/                                    u:object_r:sec_debugfs:s0
 genfscon debugfs /msm_core/                                     u:object_r:sec_debugfs:s0
-genfscon debugfs /mali/mem/                                     u:object_r:debugfs_mali_mem:s0
 genfscon debugfs /exynos-ss                                     u:object_r:sec_debugfs:s0
 genfscon debugfs /ocp_info                                      u:object_r:sec_debugfs:s0
 genfscon debugfs /dma_buf                                       u:object_r:vendor_ion_debugfs:s0
@@ -26,10 +25,10 @@ genfscon debugfs /tzdbg/                                        u:object_r:debug
 genfscon debugfs /abox/                                         u:object_r:abox_debugfs:s0
 genfscon debugfs /audio                                         u:object_r:abox_debugfs:s0
 genfscon debugfs /abox                                          u:object_r:vendor_abox_debugfs:s0
-genfscon debugfs /mali                                          u:object_r:vendor_mali_debugfs:s0
 genfscon debugfs /scsc                                          u:object_r:vendor_wlbtd_debugfs:s0
-genfscon debugfs /ion/                                          u:object_r:sec_debugfs:s0
-genfscon debugfs /ion                                           u:object_r:vendor_ion_debugfs:s0
+genfscon debugfs /ion/                                          u:object_r:debugfs_ion:s0
+genfscon debugfs /mali                                          u:object_r:debugfs_mali:s0
+genfscon debugfs /mali/mem/                                     u:object_r:debugfs_mali_mem:s0
 
 # encryptfs
 genfscon ecryptfs /                                             u:object_r:vfat:s0

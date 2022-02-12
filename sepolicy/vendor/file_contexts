@@ -537,7 +537,6 @@
 /system/bin/fsdbg		u:object_r:fsdbg_exec:s0
 /dev/socket/stork		u:object_r:stork_socket:s0
 /system/bin/ddexe		u:object_r:ddexe_exec:s0
-/system/bin/irisd		u:object_r:irisd_exec:s0
 /dev/exynos-migov		u:object_r:migov_device:s0
 /dev/gpu_freq_min		u:object_r:pm_qos_file:s0
 /dev/gpu_freq_max		u:object_r:pm_qos_file:s0
