@@ -784,13 +784,10 @@
 /dev/block/zram0		                                u:object_r:swap_block_device:s0
 /dev/block/platform/.+/by-name/SBFS			    	    u:object_r:sbfs_block_device:s0
 /dev/block/platform/.+/by-name/config			        u:object_r:frp_block_device:s0
-/dev/block/platform/.+/by-name/boot_[ab]			    u:object_r:boot_block_device:s0
 /dev/block/platform/.+/by-name/(ssd|SSD)?			    u:object_r:ssdblk_device:s0
 /dev/block/platform/.+/by-name/(frp|FRP)?			    u:object_r:frp_block_device:s0
 /dev/block/platform/.+/by-name/(efs|EFS)?			    u:object_r:efsblk_device:s0
 /dev/block/platform/.+/by-name/(omr|OMR)?			    u:object_r:omr_block_device:s0
-/dev/block/platform/.+/by-name/system_[ab]			    u:object_r:system_block_device:s0
-/dev/block/platform/.+/by-name/vendor_[ab]			    u:object_r:system_block_device:s0
 /dev/block/platform/.+/by-name/(misc|MISC)?			    u:object_r:misc_block_device:s0
 /dev/block/platform/.+/by-name/(boot|BOOT)?			    u:object_r:boot_block_device:s0
 /dev/block/platform/.+/by-name/(super|SUPER)?		    u:object_r:super_block_device:s0
