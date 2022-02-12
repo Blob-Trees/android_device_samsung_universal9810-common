@@ -768,6 +768,11 @@
 # Camera
 /dev/m2m1shot_scaler.*		u:object_r:m2m1shot_device:s0
 
+# Data
+/data/vendor/nfc(/.*)?      u:object_r:nfc_vendor_data_file:s0
+/data/vendor/mediadrm(/.*)? u:object_r:mediadrm_data_file:s0
+/data/camera(/.*)?          u:object_r:camera_data_file:s0
+
 # Devices
 /dev/mali[0-9]		  u:object_r:gpu_device:s0
 /dev/usb(/.*)?		  u:object_r:usb_device:s0
