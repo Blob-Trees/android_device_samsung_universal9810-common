@@ -16,7 +16,7 @@ genfscon debugfs /binder/proc                                   u:object_r:sec_d
 genfscon debugfs /asv_summary                                   u:object_r:sec_debugfs:s0
 genfscon debugfs /kgsl/proc/                                    u:object_r:sec_debugfs:s0
 genfscon debugfs /msm_core/                                     u:object_r:sec_debugfs:s0
-genfscon debugfs /mali/mem/                                     u:object_r:sec_debugfs:s0
+genfscon debugfs /mali/mem/                                     u:object_r:debugfs_mali_mem:s0
 genfscon debugfs /exynos-ss                                     u:object_r:sec_debugfs:s0
 genfscon debugfs /ocp_info                                      u:object_r:sec_debugfs:s0
 genfscon debugfs /dma_buf                                       u:object_r:vendor_ion_debugfs:s0
