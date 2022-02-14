@@ -1,11 +1,8 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (C) 2022 The LineageOS Project
 
-# Apex
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-# Disable APEX compression
-# Keep this after including updatable_apex.mk
-PRODUCT_COMPRESSED_APEX := false
+# APEX
+TARGET_FLATTEN_APEX := true
 
 # APNs
 PRODUCT_COPY_FILES += \
