@@ -45,8 +45,10 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Graphics
-TARGET_USES_HWC2 := true
-BACKLIGHT_PATH   := "/sys/class/backlight/panel/brightness"
+TARGET_HAS_WIDE_COLOR_DISPLAY := true
+TARGET_HAS_HDR_DISPLAY       := true
+TARGET_USES_HWC2              := true
+BACKLIGHT_PATH                := "/sys/class/backlight/panel/brightness"
 
 # Hacks
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
