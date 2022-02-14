@@ -31,6 +31,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.vulkan=mali \
     ro.zygote.disable_gl_preload=true
 
+# APEX
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.apex.updatable=false
+
 # API
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=29
