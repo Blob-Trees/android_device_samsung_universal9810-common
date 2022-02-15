@@ -45,6 +45,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.feature.a2dp_offload.enable=false \
     ro.config.a2dp_by_primary=no \
     ro.bluetooth.a2dp_offload.supported=false \
     persist.bluetooth.a2dp_offload.disabled=true \
