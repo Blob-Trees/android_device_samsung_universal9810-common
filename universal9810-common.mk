@@ -79,9 +79,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
-# Doze
+# Samsung
 PRODUCT_PACKAGES += \
-    SamsungDoze
+    SamsungDoze \
+    AdvancedDisplay
 
 # DRM
 PRODUCT_PACKAGES += \
