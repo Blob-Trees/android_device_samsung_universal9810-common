@@ -71,10 +71,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Display Device Config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
-
 # Dolby
 PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
