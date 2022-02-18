@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.universal9810
+    android.hardware.biometrics.fingerprint@2.3-service.samsung
 
 # Flat device tree for boot image
 PRODUCT_HOST_PACKAGES += \
@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.universal9810
+    android.hardware.light-service.samsung
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -329,7 +329,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.universal9810-multihal \
+    android.hardware.sensors@2.1-service.samsung-multihal \
     android.hardware.contexthub@1.0.vendor:64 \
     libsensorndkbridge
 
