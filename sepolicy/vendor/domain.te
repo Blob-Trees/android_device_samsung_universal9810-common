@@ -1,9 +1,5 @@
 # domain.te
 
-# domain.te
-
-allow domain {
-    debugfs_ion
-    debugfs_mali
-    debugfs_mali_mem
-}:dir r_dir_perms;
+allow domain debugfs_ion:dir search;
+allow domain debugfs_mali:dir search;
+allow domain debugfs_mali_mem:dir search;
