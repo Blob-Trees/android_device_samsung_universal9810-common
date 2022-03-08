@@ -90,10 +90,6 @@ PRODUCT_PACKAGES += \
     sgdisk \
     strace
 
-# Extra Icons
-PRODUCT_PACKAGES += \
-    ThemedIconsOverlay
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
