@@ -203,7 +203,7 @@
        <fqname>@1.0::ISehWidevineKeyProvisioning/default</fqname>
     </hal>
     <sepolicy>
-        <version>31.0</version>
+        <version>32.0</version>
     </sepolicy>
     <hal format="hidl">
         <name>vendor.trustonic.tee</name>
